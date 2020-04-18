@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.0",
+    "vue": "^2.6.11",
+    "what-input": "^5.2.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
