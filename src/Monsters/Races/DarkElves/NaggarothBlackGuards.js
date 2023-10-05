@@ -1,6 +1,7 @@
 import DarkElves from "@/Monsters/Races/DarkElves";
 import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
 import Hate from "@/Monsters/SpecialRules/Hate";
+import image from "@/assets/monsters/dark-elves/naggaroth_black_guards.webp";
 
 export function NaggarothBlackGuard() {
     return {
@@ -8,6 +9,7 @@ export function NaggarothBlackGuard() {
         pluralName: "Dark Elf Naggaroth Black Guards",
         description: "The Black Guards are renowned amongst the Dark Elves for their murderous attacks using their " +
             "great halberds.",
+        image,
         race: DarkElves,
         wounds: 6,
         move: 5,

@@ -7,6 +7,9 @@ export default function () {
             <p>
                 Weeping blades are poisonous weapons:
             </p>
-        ` + Poison().description,
+            <p>
+                ${Poison.helperText}
+            </p>
+        `,
     };
 }

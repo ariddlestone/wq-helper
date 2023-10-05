@@ -58,11 +58,6 @@ export function MinotaurChampion () {
 }
 
 export function MinotaurHero () {
-    const item1 = MagicItem();
-    let item2;
-    do {
-        item2 = MagicItem();
-    } while(item2.name === item1.name);
     return {
         singularName: "Minotaur Hero",
         pluralName: "Minotaur Heroes",
@@ -82,8 +77,7 @@ export function MinotaurHero () {
         damage: "3D6 / 4D6 (5+)",
         specialRules: [
             Fear(6),
-            item1,
-            item2,
+            MagicItem(2),
             MagicWeapon(),
         ],
     };

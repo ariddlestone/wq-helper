@@ -1,4 +1,4 @@
-export default function () {
+export default function (qty = 1) {
     const items = [
         {
             name: "Ring of Resistance",
@@ -32,14 +32,23 @@ export default function () {
                 "modifiers for toughness or armour. This is Fatal damage.",
         },
     ];
-    const item = items[Math.floor(Math.random() * items.length)];
+    const chosenItems = [];
+    for (let i = 0; i < qty; i++) {
+        chosenItems.push(...items.splice(Math.floor(Math.random() * items.length), 1));
+    }
     return {
-        name: "Magic Item: " + item.name,
-        description: `<p>Some monsters carry <em>magic items</em>, just like the magic items that the warriors ` +
-            `possess. In the monsters' case though these items are cursed, and are useless to the warriors. A group ` +
-            `of the same type of monsters have the same magic items.</p>` +
-            `<p>If an item has an offensive capability it makes an extra attack during the monsters' phase. The ` +
-            `effects of the item cannot be dispelled.</p>` +
-            `<p>${item.description}</p>`,
+        name: qty > 1 ? `Magic Items (${qty})` : "Magic Item",
+        description: `
+            <p>
+                Some monsters carry <em>magic items</em>, just like the magic items that the warriors possess. In the
+                monsters' case though these items are cursed, and are useless to the warriors. A group of the same type
+                of monsters have the same magic items.
+            </p>
+            <p>
+                If an item has an offensive capability it makes an extra attack during the monsters' phase. The effects
+                of the item cannot be dispelled.
+            </p>
+            ${chosenItems.map(item => `<p>${item.name}:</p><p>${item.description}</p>`).join("")}
+        `,
     };
 }

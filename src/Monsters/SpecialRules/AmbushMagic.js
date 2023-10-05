@@ -1,11 +1,6 @@
 export default function (value) {
     return {
         name: `Ambush, Magic ${typeof value === "number" ? value + "+" : value}`,
-
-        foo:    `<p>Some monsters are able to <em>Ambush</em> the warriors, springing from the darkness and ` +
-        `attacking them before they have the chance to react.</p>`,
-
-
         description: `<p>Some monsters are able to <em>Ambush</em> the warriors, springing from the darkness and ` +
             `attacking them before they have the chance to react. Some monsters are blindingly fast at making their ` +
             `attacks, and can make a Magic Ambush.</p>` +

@@ -18,7 +18,7 @@
                     </tr>
                     <tr>
                         <th>Ballistic Skill</th>
-                        <td>{{ monster.ballisticSkill > 0 ? monster.ballisticSkill + "+" : "-" }}</td>
+                        <td>{{ typeof monster.ballisticSkill === "string" ? monster.ballisticSkill : (monster.ballisticSkill > 0 ? monster.ballisticSkill + "+" : "-") }}</td>
                     </tr>
                     <tr>
                         <th>Strength</th>
@@ -64,7 +64,7 @@
                             <div class="media-object">
                                 <div v-if="monster.image" class="media-object-section">
                                     <div class="thumbnail">
-                                        <img :src="monster.image" />
+                                        <img :src="monster.image" :alt="monster.name" />
                                     </div>
                                 </div>
                                 <div v-html="monster.description" class="media-object-section">

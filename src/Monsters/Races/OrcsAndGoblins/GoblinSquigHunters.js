@@ -25,7 +25,7 @@ export function GoblinSquigHunter () {
                 description: `
                     <p>
                         Being rather vicious creatures, each Squig requires two Goblin Squig Hunters to control it,
-                        moving it forward with a long, pointed stick called a &lsqb;prodder&rsquo;.
+                        moving it forward with a long, pointed stick called a 'prodder&rsquo;.
                     </p>
                 `,
             },

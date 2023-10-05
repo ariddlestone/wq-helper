@@ -2,6 +2,7 @@ import DarkElves from "@/Monsters/Races/DarkElves";
 import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
 import Dodge from "@/Monsters/SpecialRules/Dodge";
 import Hate from "@/Monsters/SpecialRules/Hate";
+import image from "@/assets/monsters/dark-elves/warriors.webp";
 
 const description = "Dark Elf warriors are cruel and fierce fighters. Like all Elves, Dark Elves are lithe and " +
     "sinuous, with strong muscles and reactions every bit as quick as their agile minds.";
@@ -11,6 +12,7 @@ export function DarkElfWarrior() {
         singularName: "Dark Elf Warrior",
         pluralName: "Dark Elf Warriors",
         description,
+        image,
         race: DarkElves,
         wounds: 6,
         move: 5,

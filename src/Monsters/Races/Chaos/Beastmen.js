@@ -1,7 +1,9 @@
-import Chaos from "@/Monsters/Races/Chaos";
-import Throw from "@/Monsters/SpecialRules/Throw";
-import MagicItem from "@/Monsters/SpecialRules/MagicItem";
-import MagicWeapon from "@/Monsters/SpecialRules/MagicWeapon";
+import Chaos from "../Chaos";
+import MagicArmour from "../../SpecialRules/MagicArmour";
+import MagicItem from "../../SpecialRules/MagicItem";
+import MagicWeapon from "../../SpecialRules/MagicWeapon";
+import Throw from "../../SpecialRules/Throw";
+import image from "../../../assets/monsters/chaos/beastmen.webp";
 
 const description = "Beastmen fight in warbands led by old, savage warriors who have long since proved their " +
     "ability to lead. They are powerful and very resilient fighters with big, brutish heads, sharp piercing horns, " +
@@ -12,6 +14,7 @@ export function Beastman () {
         singularName: "Beastman",
         pluralName: "Beastmen",
         description,
+        image,
         race: Chaos,
         wounds: 6,
         move: 4,
@@ -33,8 +36,9 @@ export function Beastman () {
 export function BeastmanChampion () {
     return {
         singularName: "Beastman Champion",
-        pluralName: "Beastmen Champions",
+        pluralName: "Beastman Champions",
         description,
+        image,
         race: Chaos,
         wounds: 30,
         move: 4,
@@ -57,8 +61,9 @@ export function BeastmanChampion () {
 export function BeastmanHero () {
     return {
         singularName: "Beastman Hero",
-        pluralName: "Beastmen Heroes",
+        pluralName: "Beastman Heroes",
         description,
+        image,
         race: Chaos,
         wounds: 34,
         move: 4,
@@ -75,6 +80,33 @@ export function BeastmanHero () {
             MagicItem(),
             MagicWeapon(),
             Throw('spears', 9),
+        ],
+    };
+}
+
+export function BeastmanLord () {
+    return {
+        singularName: "Beastman Lord",
+        pluralName: "Beastman Lords",
+        description,
+        image,
+        race: Chaos,
+        wounds: 47,
+        move: 4,
+        weaponSkill: 7,
+        ballisticSkill: 1,
+        strength: 4,
+        toughness: 5,
+        initiative: 6,
+        attacks: 4,
+        gold: 2000,
+        armour: 2,
+        damage: "3D6",
+        specialRules: [
+            MagicArmour(),
+            MagicItem(2),
+            MagicWeapon(),
+            Throw('spears', 10),
         ],
     };
 }

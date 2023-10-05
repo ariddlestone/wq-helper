@@ -1,5 +1,6 @@
 import Monsters from "@/Monsters/Races/Monsters";
 import NeverPinned from "@/Monsters/SpecialRules/NeverPinned";
+import image from "@/assets/monsters/monsters/cave-squigs.webp";
 
 export function CaveSquig () {
     return {
@@ -7,6 +8,7 @@ export function CaveSquig () {
         pluralName: "Cave Squigs",
         description: "Part fungus and part flesh, these strange ferocious creatures are almost all teeth, easily " +
             "able to take a man's leg off with a single bite.",
+        image,
         race: Monsters,
         wounds: 3,
         move: "Special",
