@@ -1,4 +1,4 @@
-import Skaven from "@/Monsters/Races/Skaven";
+import Skaven from "../Skaven";
 
 export function Stormvermin () {
     return {
@@ -22,3 +22,7 @@ export function Stormvermin () {
         specialRules: [],
     };
 }
+
+export default [
+    {name: "Skaven Stormvermin", constructor: Stormvermin},
+];

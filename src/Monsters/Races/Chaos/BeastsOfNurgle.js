@@ -41,3 +41,7 @@ export function BeastOfNurgle () {
         ],
     };
 }
+
+export default [
+    {name: "Beasts of Nurgle", constructor: BeastOfNurgle},
+];

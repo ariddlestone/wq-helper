@@ -32,3 +32,7 @@ export function Plaguebearer () {
         ],
     };
 }
+
+export default [
+    {name: "Plaguebearers", constructor: Plaguebearer},
+];

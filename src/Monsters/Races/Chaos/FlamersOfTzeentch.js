@@ -51,3 +51,7 @@ export function FlamerOfTzeentch () {
         ],
     };
 }
+
+export default [
+    {name: "Flamers of Tzeentch", constructor: FlamerOfTzeentch},
+];

@@ -110,3 +110,10 @@ export function BeastmanLord () {
         ],
     };
 }
+
+export default [
+    {name: "Beastmen", constructor: Beastman},
+    {name: "Beastman Champions", constructor: BeastmanChampion},
+    {name: "Beastman Heroes", constructor: BeastmanHero},
+    {name: "Beastman Lords", constructor: BeastmanLord},
+];

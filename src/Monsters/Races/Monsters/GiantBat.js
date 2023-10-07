@@ -1,7 +1,7 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import Ambush from "@/Monsters/SpecialRules/Ambush";
-import Fly from "@/Monsters/SpecialRules/Fly";
-import image from "@/assets/monsters/monsters/giant-bats.webp";
+import Monsters from "../Monsters";
+import Ambush from "../../SpecialRules/Ambush";
+import Fly from "../../SpecialRules/Fly";
+import image from "../../../assets/monsters/monsters/giant-bats.webp";
 
 export function GiantBat () {
     return {
@@ -29,3 +29,7 @@ export function GiantBat () {
         ],
     };
 }
+
+export default [
+    {name: "Giant Bats", constructor: GiantBat},
+];

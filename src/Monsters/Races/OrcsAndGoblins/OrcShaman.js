@@ -1,13 +1,13 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import MagicWeapon from "@/Monsters/SpecialRules/MagicWeapon";
-import MagicResistance from "@/Monsters/SpecialRules/MagicResistance";
-import Tattoos from "@/Monsters/SpecialRules/Tattoos";
-import MagicItem from "@/Monsters/SpecialRules/MagicItem";
-import MagicDispel from "@/Monsters/SpecialRules/MagicDispel";
-import image from "@/assets/monsters/orcs-and-goblins/orc-shaman.webp";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import MagicWeapon from "../../SpecialRules/MagicWeapon";
+import MagicResistance from "../../SpecialRules/MagicResistance";
+import Tattoos from "../../SpecialRules/Tattoos";
+import MagicItem from "../../SpecialRules/MagicItem";
+import MagicDispel from "../../SpecialRules/MagicDispel";
+import image from "../../../assets/monsters/orcs-and-goblins/orc-shaman.webp";
 
-const description = "Orc Shamans are more powerful than their Goblin cousins, soaking up the psychic energy of the " +
-    "greenskins around them to create raw Waaagh! magic to hurl at their foes.";
+const description = "Orc Shamans are more powerful than their Goblin cousins, soaking up the psychic energy" +
+    " of the greenskins around them to create raw Waaagh! magic to hurl at their foes.";
 
 function OrcMagic(value) {
     return {
@@ -242,3 +242,10 @@ export function SavageOrcShaman() {
         ],
     };
 }
+
+export default [
+    {name: "Orc Shamans", constructor: OrcShaman},
+    {name: "Orc Shaman Champions", constructor: OrcShamanChampion},
+    {name: "Orc Shaman Lords", constructor: OrcShamanLord},
+    {name: "Savage Orc Shamans", constructor: SavageOrcShaman},
+];

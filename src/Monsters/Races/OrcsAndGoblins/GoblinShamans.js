@@ -1,5 +1,5 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import MagicResistance from "@/Monsters/SpecialRules/MagicResistance";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import MagicResistance from "../../SpecialRules/MagicResistance";
 
 function GoblinMagic(value) {
     return {
@@ -152,3 +152,7 @@ export function GoblinShaman() {
         ],
     };
 }
+
+export default [
+    {name: "Goblin Shamans", constructor: GoblinShaman},
+];

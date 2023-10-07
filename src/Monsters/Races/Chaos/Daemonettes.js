@@ -32,3 +32,7 @@ export function Daemonette () {
         ],
     };
 }
+
+export default [
+    {name: "Daemonettes", constructor: Daemonette},
+];

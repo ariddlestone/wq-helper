@@ -1,5 +1,5 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import image from "@/assets/monsters/monsters/giant-rats.webp";
+import Monsters from "../Monsters";
+import image from "../../../assets/monsters/monsters/giant-rats.webp";
 
 export function GiantRat () {
     return {
@@ -36,3 +36,7 @@ export function GiantRat () {
         ],
     };
 }
+
+export default [
+    {name: "Giant Rats", constructor: GiantRat},
+];

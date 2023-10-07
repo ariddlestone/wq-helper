@@ -1,14 +1,14 @@
-import {Ghoul} from "@/Monsters/Races/Undead/Ghouls";
-import {Skeleton, TombGuardian} from "@/Monsters/Races/Undead/Skeletons";
-import {Zombie} from "@/Monsters/Races/Undead/Zombies";
+import Ghouls from "./Undead/Ghouls";
+import Skeletons from "./Undead/Skeletons";
+import Zombies from "./Undead/Zombies";
+
+const monsters = []
+    .concat(Ghouls)
+    .concat(Skeletons)
+    .concat(Zombies);
 
 export default {
     key: "Undead",
     name: "Undead",
-    monsters: {
-        Ghoul,
-        Skeleton,
-        TombGuardian,
-        Zombie,
-    },
+    monsters,
 };

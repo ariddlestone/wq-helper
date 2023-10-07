@@ -1,7 +1,7 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import Tattoos from "@/Monsters/SpecialRules/Tattoos";
-import image from "@/assets/monsters/orcs-and-goblins/savage-orc.png";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import Tattoos from "../../SpecialRules/Tattoos";
+import image from "../../../assets/monsters/orcs-and-goblins/savage-orc.png";
 
 export function SavageOrc () {
     return {
@@ -32,3 +32,7 @@ export function SavageOrc () {
         ],
     };
 }
+
+export default [
+    {name: "Savage Orcs", constructor: SavageOrc},
+];

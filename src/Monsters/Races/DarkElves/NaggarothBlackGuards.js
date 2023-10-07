@@ -1,7 +1,7 @@
-import DarkElves from "@/Monsters/Races/DarkElves";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import Hate from "@/Monsters/SpecialRules/Hate";
-import image from "@/assets/monsters/dark-elves/naggaroth_black_guards.webp";
+import DarkElves from "../DarkElves";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import Hate from "../../SpecialRules/Hate";
+import image from "../../../assets/monsters/dark-elves/naggaroth_black_guards.webp";
 
 export function NaggarothBlackGuard() {
     return {
@@ -30,3 +30,7 @@ export function NaggarothBlackGuard() {
         ],
     };
 }
+
+export default [
+    {name: "Dark Elf Naggaroth Black Guards", constructor: NaggarothBlackGuard},
+];

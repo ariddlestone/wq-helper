@@ -1,37 +1,37 @@
-import Chaos from "@/Monsters/Races/Chaos";
-import {Beastman} from "@/Monsters/Races/Chaos/Beastmen";
+import Chaos from "../Races/Chaos";
+import {Beastman} from "../Races/Chaos/Beastmen";
 
-import DarkElves from "@/Monsters/Races/DarkElves";
-import {DarkElfWarrior} from "@/Monsters/Races/DarkElves/DarkElves";
-import {NaggarothBlackGuard} from "@/Monsters/Races/DarkElves/NaggarothBlackGuards";
+import DarkElves from "../Races/DarkElves";
+import {DarkElfWarrior} from "../Races/DarkElves/DarkElves";
+import {NaggarothBlackGuard} from "../Races/DarkElves/NaggarothBlackGuards";
 
-import Monsters from "@/Monsters/Races/Monsters";
-import {CaveSquig} from "@/Monsters/Races/Monsters/CaveSquigs";
-import {Centaur} from "@/Monsters/Races/Monsters/Centaurs";
-import {GiantBat} from "@/Monsters/Races/Monsters/GiantBat";
-import {GiantRat} from "@/Monsters/Races/Monsters/GiantRat";
-import {GiantSpider} from "@/Monsters/Races/Monsters/GiantSpider";
-import {Minotaur} from "@/Monsters/Races/Monsters/Minotaurs";
-import {Ogre} from "@/Monsters/Races/Monsters/Ogre";
+import Monsters from "../Races/Monsters";
+import {CaveSquig} from "../Races/Monsters/CaveSquigs";
+import {Centaur} from "../Races/Monsters/Centaurs";
+import {GiantBat} from "../Races/Monsters/GiantBat";
+import {GiantRat} from "../Races/Monsters/GiantRat";
+import {GiantSpider} from "../Races/Monsters/GiantSpider";
+import {Minotaur} from "../Races/Monsters/Minotaurs";
+import {Ogre} from "../Races/Monsters/Ogre";
 
-import Skaven from "@/Monsters/Races/Skaven";
-import {Clanrat} from "@/Monsters/Races/Skaven/Clanrat";
-import {Stormvermin} from "@/Monsters/Races/Skaven/Stormvermin";
+import Skaven from "../Races/Skaven";
+import {Clanrat} from "../Races/Skaven/Clanrat";
+import {Stormvermin} from "../Races/Skaven/Stormvermin";
 
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import {Goblin, GoblinNetter} from "@/Monsters/Races/OrcsAndGoblins/Goblins";
-import {GoblinShaman} from "@/Monsters/Races/OrcsAndGoblins/GoblinShaman";
-import {GoblinSquigHunter} from "@/Monsters/Races/OrcsAndGoblins/GoblinSquigHunters";
-import {Hobgoblin} from "@/Monsters/Races/OrcsAndGoblins/Hobgoblins";
-import {Orc} from "@/Monsters/Races/OrcsAndGoblins/Orc";
-import {SavageOrcShaman} from "@/Monsters/Races/OrcsAndGoblins/OrcShaman";
-import {SavageOrc} from "@/Monsters/Races/OrcsAndGoblins/SavageOrc";
-import {Snotling} from "@/Monsters/Races/OrcsAndGoblins/Snotling";
+import OrcsAndGoblins from "../Races/OrcsAndGoblins";
+import {Goblin, GoblinNetter} from "../Races/OrcsAndGoblins/Goblins";
+import {GoblinShaman} from "../Races/OrcsAndGoblins/GoblinShamans";
+import {GoblinSquigHunter} from "../Races/OrcsAndGoblins/GoblinSquigHunters";
+import {Hobgoblin} from "../Races/OrcsAndGoblins/Hobgoblins";
+import {Orc} from "../Races/OrcsAndGoblins/Orc";
+import {SavageOrcShaman} from "../Races/OrcsAndGoblins/OrcShaman";
+import {SavageOrc} from "../Races/OrcsAndGoblins/SavageOrc";
+import {Snotling} from "../Races/OrcsAndGoblins/Snotling";
 
-import Undead from "@/Monsters/Races/Undead";
-import {Ghoul} from "@/Monsters/Races/Undead/Ghouls";
-import {Skeleton} from "@/Monsters/Races/Undead/Skeletons";
-import {Zombie} from "@/Monsters/Races/Undead/Zombies";
+import Undead from "../Races/Undead";
+import {Ghoul} from "../Races/Undead/Ghouls";
+import {Skeleton} from "../Races/Undead/Skeletons";
+import {Zombie} from "../Races/Undead/Zombies";
 
 export default [
     // Roll on level 2 table

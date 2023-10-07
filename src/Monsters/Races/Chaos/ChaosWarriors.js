@@ -103,3 +103,10 @@ export function ChaosLord () {
         ],
     };
 }
+
+export default [
+    {name: "Chaos Warriors", constructor: ChaosWarrior},
+    {name: "Chaos Champions", constructor: ChaosChampion},
+    {name: "Chaos Heroes", constructor: ChaosHero},
+    {name: "Chaos Lords", constructor: ChaosLord},
+];

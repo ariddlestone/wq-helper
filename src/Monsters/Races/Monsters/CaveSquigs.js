@@ -1,6 +1,6 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import NeverPinned from "@/Monsters/SpecialRules/NeverPinned";
-import image from "@/assets/monsters/monsters/cave-squigs.webp";
+import Monsters from "../Monsters";
+import NeverPinned from "../../SpecialRules/NeverPinned";
+import image from "../../../assets/monsters/monsters/cave-squigs.webp";
 
 export function CaveSquig () {
     return {
@@ -39,3 +39,7 @@ export function CaveSquig () {
         ],
     };
 }
+
+export default [
+    {name: "Cave Squigs", constructor: CaveSquig},
+];

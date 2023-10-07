@@ -37,3 +37,7 @@ export function Bloodletter () {
         ],
     };
 }
+
+export default [
+    {name: "Bloodletters", constructor: Bloodletter},
+];

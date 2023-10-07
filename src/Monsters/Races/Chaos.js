@@ -1,52 +1,44 @@
-import {Beastman, BeastmanChampion, BeastmanHero, BeastmanLord} from "./Chaos/Beastmen";
-import {BeastmanShaman, BeastmanShamanChampion} from "./Chaos/BeastmanShamans";
-import {ChaosWarrior, ChaosChampion, ChaosHero, ChaosLord} from "./Chaos/ChaosWarriors";
-import {ChaosSorcerer, MasterChaosSorcerer} from "./Chaos/ChaosSorcerers";
-import {ChaosHound} from "./Chaos/ChaosHounds";
-import {Bloodletter} from "./Chaos/Bloodletters";
-import {Juggernaut} from "./Chaos/Juggernauts";
-import {Bloodthirster} from "./Chaos/Bloodthirsters";
-import {Daemonette} from "./Chaos/Daemonettes";
-import {FiendOfSlaanesh} from "./Chaos/FiendsOfSlaanesh";
-import {KeeperOfSecrets} from "./Chaos/KeepersOfSecrets";
-import {Plaguebearer} from "./Chaos/Plaguebearers";
-import {BeastOfNurgle} from "./Chaos/BeastsOfNurgle";
-import {Nurgling} from "./Chaos/Nurglings";
-import {GreatUncleanOne} from "./Chaos/GreatUncleanOnes";
-import {FlamerOfTzeentch} from "./Chaos/FlamersOfTzeentch";
-import {BlueHorrorOfTzeentch, PinkHorrorOfTzeentch} from "./Chaos/HorrorsOfTzeentch";
-import {LordOfChange} from "./Chaos/LordsOfChange";
+import Beastmen from "./Chaos/Beastmen";
+import BeastmanShamans from "./Chaos/BeastmanShamans";
+import ChaosWarriors from "./Chaos/ChaosWarriors";
+import ChaosSorcerers from "./Chaos/ChaosSorcerers";
+import ChaosHounds from "./Chaos/ChaosHounds";
+import Bloodletters from "./Chaos/Bloodletters";
+import Juggernauts from "./Chaos/Juggernauts";
+import Bloodthirsters from "./Chaos/Bloodthirsters";
+import Daemonettes from "./Chaos/Daemonettes";
+import FiendsOfSlaanesh from "./Chaos/FiendsOfSlaanesh";
+import KeepersOfSecrets from "./Chaos/KeepersOfSecrets";
+import Plaguebearers from "./Chaos/Plaguebearers";
+import BeastsOfNurgle from "./Chaos/BeastsOfNurgle";
+import Nurglings from "./Chaos/Nurglings";
+import GreatUncleanOnes from "./Chaos/GreatUncleanOnes";
+import FlamersOfTzeentch from "./Chaos/FlamersOfTzeentch";
+import HorrorsOfTzeentch from "./Chaos/HorrorsOfTzeentch";
+import LordsOfChange from "./Chaos/LordsOfChange";
+
+const monsters = []
+    .concat(Beastmen)
+    .concat(BeastmanShamans)
+    .concat(ChaosWarriors)
+    .concat(ChaosSorcerers)
+    .concat(ChaosHounds)
+    .concat(Bloodletters)
+    .concat(Juggernauts)
+    .concat(Bloodthirsters)
+    .concat(Daemonettes)
+    .concat(FiendsOfSlaanesh)
+    .concat(KeepersOfSecrets)
+    .concat(Plaguebearers)
+    .concat(BeastsOfNurgle)
+    .concat(Nurglings)
+    .concat(GreatUncleanOnes)
+    .concat(FlamersOfTzeentch)
+    .concat(HorrorsOfTzeentch)
+    .concat(LordsOfChange);
 
 export default {
     key: "Chaos",
     name: "Chaos",
-    monsters: {
-        Beastman,
-        BeastmanChampion,
-        BeastmanHero,
-        BeastmanLord,
-        BeastmanShaman,
-        BeastmanShamanChampion,
-        ChaosWarrior,
-        ChaosChampion,
-        ChaosHero,
-        ChaosLord,
-        ChaosSorcerer,
-        MasterChaosSorcerer,
-        ChaosHound,
-        Bloodletter,
-        Juggernaut,
-        Bloodthirster,
-        Daemonette,
-        FiendOfSlaanesh,
-        KeeperOfSecrets,
-        Plaguebearer,
-        BeastOfNurgle,
-        Nurgling,
-        GreatUncleanOne,
-        FlamerOfTzeentch,
-        PinkHorrorOfTzeentch,
-        BlueHorrorOfTzeentch,
-        LordOfChange,
-    },
+    monsters,
 };
