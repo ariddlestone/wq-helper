@@ -6,7 +6,7 @@ const description = "Ghouls are the descendants of insane and evil hearted canni
     "of the dead. Over the years they have degenerated into a race that is no longer human. They live amongst places " +
     "of the dead, feeding on corpses and sometimes attacking lone travellers or vulnerable groups.";
 
-export function Ghoul () {
+export function Ghoul() {
     return {
         singularName: "Ghoul",
         pluralName: "Ghouls",
