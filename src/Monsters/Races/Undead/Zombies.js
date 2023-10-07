@@ -9,7 +9,7 @@ const description = "Zombies are fresh corpses brought back to life by foul necr
     "them vulnerable to weapons in the same way as living men. They are horrible creations and extremely difficult " +
     "to fight, though troops who stand their ground can beat them off if they keep their nerve.";
 
-export function Zombie () {
+export function Zombie() {
     return {
         singularName: "Zombie",
         pluralName: "Zombies",
