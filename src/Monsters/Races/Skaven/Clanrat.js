@@ -1,13 +1,13 @@
-import Skaven from "@/Monsters/Races/Skaven";
-import MagicWeapon from "@/Monsters/SpecialRules/MagicWeapon";
-import NeverPinned from "@/Monsters/SpecialRules/NeverPinned";
-import Dodge from "@/Monsters/SpecialRules/Dodge";
-import WeepingBlade from "@/Monsters/SpecialRules/WeepingBlade";
-import image from "@/assets/monsters/skaven/clanrats.webp";
+import Skaven from "../Skaven";
+import MagicWeapon from "../../SpecialRules/MagicWeapon";
+import NeverPinned from "../../SpecialRules/NeverPinned";
+import Dodge from "../../SpecialRules/Dodge";
+import WeepingBlade from "../../SpecialRules/WeepingBlade";
+import image from "../../../assets/monsters/skaven/clanrats.webp";
 
-const description = "Individual Skaven warriors are vicious but cowardly creatures, and they are best deployed in " +
-    "large numbers. The more powerful warriors lead their brethren into combat, and a Skaven Champion will not " +
-    "think twice about stabbing his leader in the back in his desire to rise to the rank of Chieftain.";
+const description = "Individual Skaven warriors are vicious but cowardly creatures, and they are best " +
+    "deployed in large numbers. The more powerful warriors lead their brethren into combat, and a Skaven Champion " +
+    "will not think twice about stabbing his leader in the back in his desire to rise to the rank of Chieftain.";
 
 export function Clanrat() {
     return {
@@ -58,8 +58,8 @@ export function ClanratChampion() {
 
 export function ClanratChieftain() {
     return {
-        singularName: "Skaven Clanrat Cheiftain",
-        pluralName: "Skaven Clanrat Cheiftains",
+        singularName: "Skaven Clanrat Chieftain",
+        pluralName: "Skaven Clanrat Chieftains",
         description,
         image,
         race: Skaven,
@@ -81,3 +81,9 @@ export function ClanratChieftain() {
         ],
     };
 }
+
+export default [
+    {name: "Clanrats", constructor: Clanrat},
+    {name: "Clanrat Champions", constructor: ClanratChampion},
+    {name: "Clanrat Chieftains", constructor: ClanratChieftain},
+];

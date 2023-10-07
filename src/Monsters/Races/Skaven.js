@@ -1,13 +1,12 @@
-import {Clanrat, ClanratChampion, ClanratChieftain} from "@/Monsters/Races/Skaven/Clanrat";
-import {Stormvermin} from "@/Monsters/Races/Skaven/Stormvermin";
+import Clanrats from "./Skaven/Clanrat";
+import Stormvermin from "./Skaven/Stormvermin";
+
+const monsters = []
+    .concat(Clanrats)
+    .concat(Stormvermin);
 
 export default {
     key: "Skaven",
     name: "Skaven",
-    monsters: {
-        Clanrat,
-        ClanratChampion,
-        ClanratChieftain,
-        Stormvermin,
-    },
+    monsters,
 };
