@@ -1,6 +1,6 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import Fear from "@/Monsters/SpecialRules/Fear";
+import Monsters from "../Monsters";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import Fear from "../../SpecialRules/Fear";
 
 const description = "More often found on the plains of the Northern Wastes, the brutish Chaos Centaurs sometimes " +
     "descend into the ancient Dwarf Holds along with Beastmen and Chaos Warriors in search of treasure. Their " +
@@ -31,3 +31,7 @@ export function Centaur () {
         ],
     };
 }
+
+export default [
+    {name: "Centaurs", constructor: Centaur},
+];

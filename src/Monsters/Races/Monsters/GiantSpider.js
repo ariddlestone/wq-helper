@@ -1,6 +1,6 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import Web from "@/Monsters/SpecialRules/Web";
-import image from "@/assets/monsters/monsters/giant-spiders.webp";
+import Monsters from "../Monsters";
+import Web from "../../SpecialRules/Web";
+import image from "../../../assets/monsters/monsters/giant-spiders.webp";
 
 export function GiantSpider () {
     return {
@@ -27,3 +27,7 @@ export function GiantSpider () {
         ],
     };
 }
+
+export default [
+    {name: "Giant Spiders", constructor: GiantSpider},
+];

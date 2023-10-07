@@ -1,6 +1,6 @@
 import Chaos from "./Races/Chaos";
 import DarkElves from "./Races/DarkElves";
-// import Monsters from "./Races/Monsters";
+import Monsters from "./Races/Monsters";
 // import OrcsAndGoblins from "./Races/OrcsAndGoblins";
 // import Skaven from "./Races/Skaven";
 // import Undead from "./Races/Undead";
@@ -8,7 +8,7 @@ import DarkElves from "./Races/DarkElves";
 export default [
     Chaos,
     DarkElves,
-    // Monsters,
+    Monsters,
     // OrcsAndGoblins,
     // Skaven,
     // Undead,

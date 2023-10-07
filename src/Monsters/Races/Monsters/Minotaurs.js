@@ -1,8 +1,8 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import Fear from "@/Monsters/SpecialRules/Fear";
-import MagicWeapon from "@/Monsters/SpecialRules/MagicWeapon";
-import MagicItem from "@/Monsters/SpecialRules/MagicItem";
-import image from "@/assets/monsters/monsters/minotaurs.webp";
+import Monsters from "../Monsters";
+import Fear from "../../SpecialRules/Fear";
+import MagicWeapon from "../../SpecialRules/MagicWeapon";
+import MagicItem from "../../SpecialRules/MagicItem";
+import image from "../../../assets/monsters/monsters/minotaurs.webp";
 
 const description = "Minotaurs are large creatures, and have the torso of a hugely-muscled human, but the horned " +
     "head of a wild bull. Their immense faces are broad, squat and evil, with beady eyes, jutting fangs and " +
@@ -82,3 +82,9 @@ export function MinotaurHero () {
         ],
     };
 }
+
+export default [
+    {name: "Minotaurs", constructor: Minotaur},
+    {name: "Minotaur Champions", constructor: MinotaurChampion},
+    {name: "Minotaur Heroes", constructor: MinotaurHero},
+];

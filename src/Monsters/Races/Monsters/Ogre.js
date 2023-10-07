@@ -1,5 +1,5 @@
-import Monsters from "@/Monsters/Races/Monsters";
-import Fear from "@/Monsters/SpecialRules/Fear";
+import Monsters from "../Monsters";
+import Fear from "../../SpecialRules/Fear";
 
 export function Ogre () {
     return {
@@ -24,3 +24,7 @@ export function Ogre () {
         ],
     };
 }
+
+export default [
+    {name: "Ogres", constructor: Ogre},
+];
