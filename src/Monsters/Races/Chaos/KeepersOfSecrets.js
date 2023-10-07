@@ -45,3 +45,7 @@ export function KeeperOfSecrets () {
         ],
     };
 }
+
+export default [
+    {name: "Keepers of Secrets", constructor: KeeperOfSecrets},
+];

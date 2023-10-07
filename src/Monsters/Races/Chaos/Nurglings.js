@@ -36,3 +36,7 @@ export function Nurgling () {
         ],
     };
 }
+
+export default [
+    {name: "Nurglings", constructor: Nurgling},
+];

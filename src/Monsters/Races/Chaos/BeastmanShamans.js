@@ -105,10 +105,10 @@ const beastmanMagic = (spells) => ({
     `,
 });
 
-export function BeastmanShaman () {
+export function BeastmanShaman() {
     return {
         singularName: "Beastman Shaman",
-        pluralName: "Beastman Shamans",
+        pluralName: "Beastman Shaman",
         description,
         image,
         race: Chaos,
@@ -130,7 +130,7 @@ export function BeastmanShaman () {
     };
 }
 
-export function BeastmanShamanChampion () {
+export function BeastmanShamanChampion() {
     return {
         singularName: "Beastman Shaman Champion",
         pluralName: "Beastman Shaman Champions",
@@ -155,3 +155,8 @@ export function BeastmanShamanChampion () {
         ],
     };
 }
+
+export default [
+    {name: "Beastman Shaman", constructor: BeastmanShaman},
+    {name: "Beastman Shaman Champions", constructor: BeastmanShamanChampion},
+];

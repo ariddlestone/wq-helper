@@ -69,3 +69,8 @@ export function BlueHorrorOfTzeentch () {
         ],
     };
 }
+
+export default [
+    {name: "Pink Horrors of Tzeentch", constructor: PinkHorrorOfTzeentch},
+    {name: "Blue Horrors of Tzeentch", constructor: BlueHorrorOfTzeentch},
+];

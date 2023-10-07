@@ -32,3 +32,7 @@ export function Juggernaut () {
         ],
     };
 }
+
+export default [
+    {name: "Juggernauts", constructor: Juggernaut},
+];

@@ -83,3 +83,7 @@ export function Bloodthirster () {
         ],
     };
 }
+
+export default [
+    {name: "Bloodthirsters", constructor: Bloodthirster},
+];

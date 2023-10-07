@@ -79,3 +79,7 @@ export function LordOfChange () {
         ],
     };
 }
+
+export default [
+    {name: "Lords of Change", constructor: LordOfChange},
+];

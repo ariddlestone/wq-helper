@@ -22,7 +22,7 @@
           <div class="grid-x grid-margin-x">
             <select v-model="selectedMonster" class="cell small-5">
               <optgroup v-for="race in races" v-bind:key="race.key" :label="race.name">
-                <option v-for="monster in race.monsters" v-bind:key="monster.name" :value="race.key + '.' + monster.name">{{monster().pluralName}}</option>
+                <option v-for="monster in race.monsters" v-bind:key="monster.constructor.name" :value="race.key + '.' + monster.constructor.name">{{monster.name}}</option>
               </optgroup>
             </select>
             <input type="number" placeholder="Quantity" v-model="selectedMonsterQuantity" class="cell small-5" />
@@ -72,10 +72,10 @@ export default {
     addSelectedMonster(selectedMonster, quantity) {
       const selectedRace = selectedMonster.split(".")[0];
       const race = this.races.filter(race => race.key === selectedRace)[0];
-      const monster = race.monsters[selectedMonster.split(".")[1]];
+      const monster = race.monsters.filter(monster => monster.constructor.name === selectedMonster.split(".")[1])[0];
       this.monsterGroups.push({
         qty: parseInt(quantity),
-        monster: monster(),
+        monster: monster.constructor(),
         id: Date.now(),
       });
     },

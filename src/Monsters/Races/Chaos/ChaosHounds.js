@@ -28,3 +28,7 @@ export function ChaosHound () {
         ],
     };
 }
+
+export default [
+    {name: "Chaos Hounds", constructor: ChaosHound},
+];

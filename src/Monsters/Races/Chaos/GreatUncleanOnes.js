@@ -66,3 +66,7 @@ export function GreatUncleanOne () {
         ],
     };
 }
+
+export default [
+    {name: "Great Unclean Ones", constructor: GreatUncleanOne},
+];

@@ -30,3 +30,7 @@ export function FiendOfSlaanesh () {
         ],
     };
 }
+
+export default [
+    {name: "Fiends of Slaanesh", constructor: FiendOfSlaanesh},
+];

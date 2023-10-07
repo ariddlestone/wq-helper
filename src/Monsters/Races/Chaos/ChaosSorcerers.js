@@ -67,3 +67,8 @@ export function MasterChaosSorcerer () {
         ],
     };
 }
+
+export default [
+    {name: "Chaos Sorcerers", constructor: ChaosSorcerer},
+    {name: "Master Chaos Sorcerers", constructor: MasterChaosSorcerer},
+];
