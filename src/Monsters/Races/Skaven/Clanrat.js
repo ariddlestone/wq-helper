@@ -5,9 +5,9 @@ import Dodge from "../../SpecialRules/Dodge";
 import WeepingBlade from "../../SpecialRules/WeepingBlade";
 import image from "../../../assets/monsters/skaven/clanrats.webp";
 
-const description = "Individual Skaven warriors are vicious but cowardly creatures, and they are best " +
-    "deployed in large numbers. The more powerful warriors lead their brethren into combat, and a Skaven Champion " +
-    "will not think twice about stabbing his leader in the back in his desire to rise to the rank of Chieftain.";
+const description = "Individual Skaven warriors are vicious but cowardly creatures, and they are best deployed in " +
+    "large numbers. The more powerful warriors lead their brethren into combat, and a Skaven Champion will not think " +
+    "twice about stabbing his leader in the back in his desire to rise to the rank of Chieftain.";
 
 export function Clanrat() {
     return {

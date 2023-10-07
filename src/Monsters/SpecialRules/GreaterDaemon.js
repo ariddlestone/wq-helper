@@ -23,9 +23,8 @@ export default function (value) {
                 may be hit automatically.
             </p>
             <p>
-                If it is a magic user, when rolling for spells a Greater Daemon gets +1 on its Magic Table dice roll.
-                Note that Greater Daemons normally use the Chaos Magic Table: see the Chaos Sorcerer entry for full
-                details.
+                If it is a magic user, and the spell table requires more than 1D6, then when rolling for spells a
+                Greater Daemon gets +1 on its Magic Table dice roll.
             </p>
         `,
     };

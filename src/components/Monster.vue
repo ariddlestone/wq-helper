@@ -58,7 +58,7 @@
             </div>
             <div class="cell medium-6 large-8">
                 <ul class="accordion" data-accordion data-allow-all-closed="true">
-                    <li class="accordion-item is-active" data-accordion-item>
+                    <li v-if="monster.description" class="accordion-item is-active" data-accordion-item>
                         <a class="accordion-title" href="#">Description</a>
                         <div class="accordion-content" data-tab-content>
                             <div class="media-object">
