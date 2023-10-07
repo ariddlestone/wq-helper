@@ -1,7 +1,9 @@
-export default function (value) {
-    value = typeof value === "number" ? value + "+" : value;
+export default function (roll) {
+    if (typeof roll === "number") {
+        roll += "+";
+    }
     return {
-        name: `Tattoos ${value}`,
+        name: `Tattoos ${roll}`,
         description: `
             <p>
                 Some Monsters are painted with complicated protective Tattoos that act like armour. Whether this is due
@@ -9,7 +11,7 @@ export default function (value) {
                 they do seem to work.
             </p>
             <p>
-                Each time a Monster wearing Tattoos is hit roll 1D6. If the score is ${value} the blow has no effect.
+                Each time a Monster wearing Tattoos is hit roll 1D6. If the score is ${roll} the blow has no effect.
             </p>
         `,
     };

@@ -23,10 +23,10 @@ import {Goblin, GoblinNetter} from "../Races/OrcsAndGoblins/Goblins";
 import {GoblinShaman} from "../Races/OrcsAndGoblins/GoblinShamans";
 import {GoblinSquigHunter} from "../Races/OrcsAndGoblins/GoblinSquigHunters";
 import {Hobgoblin} from "../Races/OrcsAndGoblins/Hobgoblins";
-import {Orc} from "../Races/OrcsAndGoblins/Orc";
-import {SavageOrcShaman} from "../Races/OrcsAndGoblins/OrcShaman";
-import {SavageOrc} from "../Races/OrcsAndGoblins/SavageOrc";
-import {Snotling} from "../Races/OrcsAndGoblins/Snotling";
+import {Orc} from "../Races/OrcsAndGoblins/Orcs";
+import {SavageOrcShaman} from "../Races/OrcsAndGoblins/OrcShamans";
+import {SavageOrc} from "../Races/OrcsAndGoblins/SavageOrcs";
+import {Snotling} from "../Races/OrcsAndGoblins/Snotlings";
 
 import Undead from "../Races/Undead";
 import {Ghoul} from "../Races/Undead/Ghouls";

@@ -1,11 +1,11 @@
-export default function (roll) {
+export default function (roll, item = undefined) {
 
     if (typeof roll === "number") {
         roll = roll + "+";
     }
 
     return {
-        name: `Magic Resistance ${roll}`,
+        name: `Magic Resistance ${roll}${item ? ` (${item})` : ""}`,
         description: `
             <p>
                 Some Monsters are naturally able to shrug off the effects of a spell cast against them. Such Monsters
