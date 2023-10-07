@@ -1,8 +1,10 @@
-import Undead from "@/Monsters/Races/Undead";
-import Fear from "@/Monsters/SpecialRules/Fear";
-import Break from "@/Monsters/SpecialRules/Break";
+import Undead from "../Undead";
+import Fear from "../../SpecialRules/Fear";
+import Break from "../../SpecialRules/Break";
 
-const description = "";
+const description = "Ghouls are the descendants of insane and evil hearted cannibals - men who ate the flesh " +
+    "of the dead. Over the years they have degenerated into a race that is no longer human. They live amongst places " +
+    "of the dead, feeding on corpses and sometimes attacking lone travellers or vulnerable groups.";
 
 export function Ghoul () {
     return {
@@ -27,3 +29,7 @@ export function Ghoul () {
         ],
     };
 }
+
+export default [
+    {name: "Ghouls", constructor: Ghoul},
+];

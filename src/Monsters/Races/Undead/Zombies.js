@@ -1,5 +1,5 @@
-import Undead from "@/Monsters/Races/Undead";
-import Fear from "@/Monsters/SpecialRules/Fear";
+import Undead from "../Undead";
+import Fear from "../../SpecialRules/Fear";
 
 const description = "Zombies are fresh corpses brought back to life by foul necromancy. Being more recently dead " +
     "than skeletons they retain more of their intellect and are more like living humans, although they are totally " +
@@ -31,3 +31,7 @@ export function Zombie () {
         ],
     };
 }
+
+export default [
+    {name: "Zombies", constructor: Zombie},
+]

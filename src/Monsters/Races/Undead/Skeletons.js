@@ -1,12 +1,12 @@
-import Undead from "@/Monsters/Races/Undead";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import Fear from "@/Monsters/SpecialRules/Fear";
-import Regenerate from "@/Monsters/SpecialRules/Regenerate";
-import image from "@/assets/monsters/undead/tomb-guardians.webp";
+import Undead from "../Undead";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import Fear from "../../SpecialRules/Fear";
+import Regenerate from "../../SpecialRules/Regenerate";
+import image from "../../../assets/monsters/undead/tomb-guardians.webp";
 
-const description = "Skeleton warriors claw themselves out of the earth to attack the living. They wield rusty swords " +
-    "and axes, and mouldering remnants of armour still cling to their frame. Some skeletal champions are the remains " +
-    "of long dead warriors, guarding their ancient tombs against the living.";
+const description = "Skeleton warriors claw themselves out of the earth to attack the living. They wield rusty " +
+    "swords and axes, and mouldering remnants of armour still cling to their frame. Some skeletal champions are the " +
+    "remains of long dead warriors, guarding their ancient tombs against the living.";
 
 export function Skeleton() {
     return {
@@ -61,3 +61,8 @@ export function TombGuardian() {
         ],
     };
 }
+
+export default [
+    {name: "Skeletons", constructor: Skeleton},
+    {name: "Tomb Guardians", constructor: TombGuardian},
+]
