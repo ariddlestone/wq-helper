@@ -1,7 +1,7 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import AmbushMagic from "@/Monsters/SpecialRules/AmbushMagic";
-import GangUp from "@/Monsters/SpecialRules/GangUp";
-import image from "@/assets/monsters/orcs-and-goblins/snotlings.webp";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import AmbushMagic from "../../SpecialRules/AmbushMagic";
+import GangUp from "../../SpecialRules/GangUp";
+import image from "../../../assets/monsters/orcs-and-goblins/snotlings.webp";
 
 export function Snotling () {
     return {
@@ -29,3 +29,7 @@ export function Snotling () {
         ],
     };
 }
+
+export default [
+    {name: "Snotlings", constructor: Snotling},
+];

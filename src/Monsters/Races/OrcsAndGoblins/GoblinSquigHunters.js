@@ -1,4 +1,4 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
+import OrcsAndGoblins from "../OrcsAndGoblins";
 
 export function GoblinSquigHunter () {
     return {
@@ -32,3 +32,7 @@ export function GoblinSquigHunter () {
         ],
     };
 }
+
+export default [
+    {name: "Goblin Squig Hunters", constructor: GoblinSquigHunter},
+];

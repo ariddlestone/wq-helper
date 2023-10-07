@@ -1,7 +1,7 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import AmbushMagic from "@/Monsters/SpecialRules/AmbushMagic";
-import Break from "@/Monsters/SpecialRules/Break";
-import image from "@/assets/monsters/orcs-and-goblins/hobgoblin.png";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import AmbushMagic from "../../SpecialRules/AmbushMagic";
+import Break from "../../SpecialRules/Break";
+import image from "../../../assets/monsters/orcs-and-goblins/hobgoblin.png";
 
 export function Hobgoblin () {
     return {
@@ -30,3 +30,7 @@ export function Hobgoblin () {
         ],
     };
 }
+
+export default [
+    {name: "Hobgoblins", constructor: Hobgoblin},
+];

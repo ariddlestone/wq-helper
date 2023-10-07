@@ -1,8 +1,8 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import MagicWeapon from "@/Monsters/SpecialRules/MagicWeapon";
-import MagicResistance from "@/Monsters/SpecialRules/MagicResistance";
-import image from "@/assets/monsters/orcs-and-goblins/goblin-archers.webp";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import MagicWeapon from "../../SpecialRules/MagicWeapon";
+import MagicResistance from "../../SpecialRules/MagicResistance";
+import image from "../../../assets/monsters/orcs-and-goblins/goblin-archers.webp";
 
 const description = "Like their big relatives the Orcs, Goblins vary in size although they are typically smaller than " +
     "Orcs and usually smaller than a man. Goblins have quick, nimble fingers and small darting eyes, their teeth are " +
@@ -127,3 +127,10 @@ export function GoblinNetter () {
         ],
     };
 }
+
+export default [
+    {name: "Goblins", constructor: Goblin},
+    {name: "Goblin Bosses", constructor: GoblinBoss},
+    {name: "Goblin Big Bosses", constructor: GoblinBigBoss},
+    {name: "Goblin Netters", constructor: GoblinNetter},
+];

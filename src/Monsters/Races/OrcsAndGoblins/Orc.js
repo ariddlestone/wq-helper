@@ -1,6 +1,6 @@
-import OrcsAndGoblins from "@/Monsters/Races/OrcsAndGoblins";
-import ArmedWith from "@/Monsters/SpecialRules/ArmedWith";
-import imageWithSwords from "@/assets/monsters/orcs-and-goblins/orcs.webp";
+import OrcsAndGoblins from "../OrcsAndGoblins";
+import ArmedWith from "../../SpecialRules/ArmedWith";
+import image from "../../../assets/monsters/orcs-and-goblins/orcs.webp";
 
 export function Orc () {
 
@@ -11,7 +11,7 @@ export function Orc () {
             "but most are substantially larger. They are also much broader than humans, with big deep chests, " +
             "massive shoulders and powerfully muscled arms. Orcs have large heads with huge jaws but tiny foreheads " +
             "behind which lurk a thick skull and little brain.",
-        image: imageWithSwords,
+        image,
         race: OrcsAndGoblins,
         wounds: 3,
         move: 4,
@@ -32,3 +32,7 @@ export function Orc () {
         ],
     };
 }
+
+export default [
+    {name: "Orcs", constructor: Orc},
+];
