@@ -1,6 +1,11 @@
-export default function (value) {
+export default function (roll) {
+
+    if (typeof roll === "number") {
+        roll = roll + "+";
+    }
+
     return {
-        name: `Dodge ${value}+`,
+        name: `Dodge ${roll}`,
         description: `
             <p>
                 Some monsters are able to <em>Dodge</em> in the same way as the Elf warrior. Each type of monster with
@@ -8,7 +13,7 @@ export default function (value) {
                 incoming blow.
             </p>
             <p>
-                This monster avoids a warrior's attack on a 1D6 roll of ${value}+.
+                This monster avoids a warrior's attack on a 1D6 roll of ${roll}.
             </p>
         `,
     };

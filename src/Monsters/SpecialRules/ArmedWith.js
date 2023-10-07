@@ -9,28 +9,19 @@ export default function (values) {
         }
     }
     const value = values[index];
-    const description = values.length === 1
-        ? `
-            <p>
-                These monsters are armed with:
-                <ul>
-                    <li>${value.name}</li>
-                </ul>
-            </p>
-        `
-        : `
-            <p>
-                Some monsters may be <em>Armed With</em> a choice of weapons.
-            </p>
+    let description = value.description || `<p>These monsters are armed with ${value.name}.</p>`;
+    if (values.length > 1) {
+        description += `
             <p>
                 These monsters could have been armed with any of the following:
                 <ul>
                     ${values.map(value => `
-                    <li>${value.name}</li>
+                        <li>${value.name}</li>
                     `).join('')}
                 </ul>
             </p>
         `;
+    }
     return {
         name: `Armed with ${value.name}`,
         description,
