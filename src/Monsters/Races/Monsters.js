@@ -8,7 +8,7 @@ import Dragons from "./Monsters/Dragons";
 import GiantBats from "./Monsters/GiantBat";
 import GiantRats from "./Monsters/GiantRats";
 import GiantScorpions from "./Monsters/GiantScorpions";
-import GiantSpiders from "./Monsters/GiantSpider";
+import GiantSpiders from "./Monsters/GiantSpiders";
 import Minotaurs from "./Monsters/Minotaurs";
 import Ogres from "./Monsters/Ogre";
 
