@@ -4,6 +4,7 @@ import Centaurs from "./Monsters/Centaurs";
 import Chimeras from "./Monsters/Chimeras";
 import Cockatrices from "./Monsters/Cockatrices";
 import DragonOgres from "./Monsters/DragonOgres";
+import Dragons from "./Monsters/Dragons";
 import GiantBats from "./Monsters/GiantBat";
 import GiantRats from "./Monsters/GiantRat";
 import GiantSpiders from "./Monsters/GiantSpider";
@@ -17,6 +18,7 @@ const monsters = []
     .concat(Chimeras)
     .concat(Cockatrices)
     .concat(DragonOgres)
+    .concat(Dragons)
     .concat(GiantBats)
     .concat(GiantRats)
     .concat(GiantSpiders)
