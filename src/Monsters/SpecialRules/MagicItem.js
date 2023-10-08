@@ -23,7 +23,7 @@ export default function (qty = 1) {
         },
         {
             name: "Mask of Kadon",
-            description: "This mask gives the monster Fear (dungeon level + 3). If the wearor already causes Fear it " +
+            description: "This mask gives the monster Fear (dungeon level + 3). If the wearer already causes Fear it " +
                 "gives him Terror (his Fear value).",
         },
         {
@@ -32,23 +32,34 @@ export default function (qty = 1) {
                 "modifiers for toughness or armour. This is Fatal damage.",
         },
     ];
-    const chosenItems = [];
+
+    let chosenItems = [];
     for (let i = 0; i < qty; i++) {
         chosenItems.push(...items.splice(Math.floor(Math.random() * items.length), 1));
     }
-    return {
-        name: qty > 1 ? `Magic Items (${qty})` : "Magic Item",
+    chosenItems = chosenItems.map(item => {
+        return {
+            name: "Magic Item: " + item.name,
+            description: `
+                <p>
+                    ${item.description}
+                </p>
+            `,
+        };
+    })
+    chosenItems.unshift({
+        name: "Magic Items",
         description: `
-            <p>
-                Some monsters carry <em>magic items</em>, just like the magic items that the warriors possess. In the
-                monsters' case though these items are cursed, and are useless to the warriors. A group of the same type
-                of monsters have the same magic items.
-            </p>
-            <p>
-                If an item has an offensive capability it makes an extra attack during the monsters' phase. The effects
-                of the item cannot be dispelled.
-            </p>
-            ${chosenItems.map(item => `<p>${item.name}:</p><p>${item.description}</p>`).join("")}
-        `,
-    };
+                <p>
+                    Some monsters carry <em>magic items</em>, just like the magic items that the warriors possess. In
+                    the monsters' case though these items are cursed, and are useless to the warriors. A group of the
+                    same type of monsters have the same magic items.
+                </p>
+                <p>
+                    If an item has an offensive capability it makes an extra attack during the monsters' phase. The
+                    effects of the item cannot be dispelled.
+                </p>
+            `,
+    });
+    return chosenItems;
 }
