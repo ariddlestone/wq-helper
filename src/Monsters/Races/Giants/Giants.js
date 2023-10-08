@@ -1,11 +1,5 @@
-import AmbushMagic from "../../SpecialRules/AmbushMagic";
-import NecromanticMagic from "../../SpecialRules/NecromanticMagic";
-import MagicArmour from "../../SpecialRules/MagicArmour";
-import MagicDispel from "../../SpecialRules/MagicDispel";
-import MagicItem from "../../SpecialRules/MagicItem";
-import MagicResistance from "../../SpecialRules/MagicResistance";
-import MagicWeapon from "../../SpecialRules/MagicWeapon";
-import Giants from "./Races/Giants";
+import Giants from "../Giants";
+import Fear from "../../SpecialRules/Fear";
 import IgnoreBlows from "../../SpecialRules/IgnoreBlows";
 import IgnorePain from "../../SpecialRules/IgnorePain";
 import LargeMonster from "../../SpecialRules/LargeMonster";
@@ -212,3 +206,7 @@ export function Giant() {
         ],
     };
 }
+
+export default [
+    {name: "Giants", constructor: Giant},
+];
