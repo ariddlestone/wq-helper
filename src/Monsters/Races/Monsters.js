@@ -10,6 +10,7 @@ import GiantRats from "./Monsters/GiantRats";
 import GiantScorpions from "./Monsters/GiantScorpions";
 import GiantSpiders from "./Monsters/GiantSpiders";
 import Gorgons from "./Monsters/Gorgons";
+import GreatTauruses from "./Monsters/GreatTauruses";
 import Minotaurs from "./Monsters/Minotaurs";
 import Ogres from "./Monsters/Ogres";
 
@@ -26,6 +27,7 @@ const monsters = []
     .concat(GiantScorpions)
     .concat(GiantSpiders)
     .concat(Gorgons)
+    .concat(GreatTauruses)
     .concat(Minotaurs)
     .concat(Ogres);
 
