@@ -106,8 +106,8 @@ export function GoblinNetter () {
         armour: 0,
         damage: "1D6",
         specialRules: [
-            {
-                name: "Armed with Nets",
+            ArmedWith([{
+                name: "Nets",
                 description: `
                     <p>
                         Roll to hit as normal. Any warrior hit by a net quickly becomes enmeshed. Once a warrior has
@@ -123,7 +123,7 @@ export function GoblinNetter () {
                         the nets and may fight as normal.
                     </p>
                 `,
-            },
+            }]),
         ],
     };
 }
