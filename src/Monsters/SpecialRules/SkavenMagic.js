@@ -1,7 +1,7 @@
 import Magic from "./Magic";
 
 export default function (spellsPerTurn, modifier = 0) {
-    let spells = [
+    const spells = [
         {
             minRoll: 1,
             maxRoll: 1,
