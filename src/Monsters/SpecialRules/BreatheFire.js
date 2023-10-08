@@ -1,4 +1,4 @@
-export default function () {
+export default function (value) {
     return {
         name: `Breathe Fire ${value}`,
         description: `
