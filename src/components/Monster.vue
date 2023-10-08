@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     </li>
-                    <li v-bind:key="specialRule.name" v-for="specialRule in monster.specialRules" class="accorion-item" data-accordion-item>
+                    <li v-bind:key="specialRule.name" v-for="specialRule in [].concat(...monster.specialRules)" class="accordion-item" data-accordion-item>
                         <a v-html="specialRule.name" class="accordion-title" href="#" />
                         <div v-html="specialRule.description" class="accordion-content" data-tab-content />
                     </li>
