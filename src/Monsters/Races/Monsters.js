@@ -6,7 +6,7 @@ import Cockatrices from "./Monsters/Cockatrices";
 import DragonOgres from "./Monsters/DragonOgres";
 import Dragons from "./Monsters/Dragons";
 import GiantBats from "./Monsters/GiantBat";
-import GiantRats from "./Monsters/GiantRat";
+import GiantRats from "./Monsters/GiantRats";
 import GiantSpiders from "./Monsters/GiantSpider";
 import Minotaurs from "./Monsters/Minotaurs";
 import Ogres from "./Monsters/Ogre";
