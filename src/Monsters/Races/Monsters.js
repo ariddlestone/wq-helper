@@ -15,6 +15,7 @@ import Griffons from "./Monsters/Griffons";
 import Hippogriffs from "./Monsters/Hippogriffs";
 import Hydras from "./Monsters/Hydras";
 import Lammasu from "./Monsters/Lammasu";
+import Manticores from "./Monsters/Manticores";
 import Minotaurs from "./Monsters/Minotaurs";
 import Ogres from "./Monsters/Ogres";
 
@@ -36,6 +37,7 @@ const monsters = []
     .concat(Hippogriffs)
     .concat(Hydras)
     .concat(Lammasu)
+    .concat(Manticores)
     .concat(Minotaurs)
     .concat(Ogres);
 
