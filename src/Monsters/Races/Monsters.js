@@ -18,6 +18,7 @@ import Lammasu from "./Monsters/Lammasu";
 import Manticores from "./Monsters/Manticores";
 import Minotaurs from "./Monsters/Minotaurs";
 import Ogres from "./Monsters/Ogres";
+import RatOgres from "./Monsters/RatOgres";
 
 const monsters = []
     .concat(BullCentaurs)
@@ -39,7 +40,9 @@ const monsters = []
     .concat(Lammasu)
     .concat(Manticores)
     .concat(Minotaurs)
-    .concat(Ogres);
+    .concat(Ogres)
+    .concat(RatOgres)
+;
 
 export default {
     key: "Monsters",
