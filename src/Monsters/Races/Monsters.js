@@ -21,6 +21,7 @@ import Ogres from "./Monsters/Ogres";
 import RatOgres from "./Monsters/RatOgres";
 import Trolls from "./Monsters/Trolls";
 import Warhounds from "./Monsters/Warhounds";
+import Wyverns from "./Monsters/Wyverns";
 
 const monsters = []
     .concat(BullCentaurs)
@@ -46,6 +47,7 @@ const monsters = []
     .concat(RatOgres)
     .concat(Trolls)
     .concat(Warhounds)
+    .concat(Wyverns)
 ;
 
 export default {
