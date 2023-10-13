@@ -1,7 +1,6 @@
 import Monsters from "../Monsters";
 import Ambush from "../../SpecialRules/Ambush";
 import Fly from "../../SpecialRules/Fly";
-import image from "../../../assets/monsters/monsters/giant-bats.webp";
 
 export function GiantBat () {
     return {
@@ -10,7 +9,6 @@ export function GiantBat () {
         description: "Out of the darkest caves fly the twittering, screeching clouds of Giant Bats. These fanged " +
             "monstrosities, held aloft on great leathery wings, hide in the shadows, then swoop silently down upon " +
             "their prey and rip them to shreds with teeth and talons.",
-        image,
         race: Monsters,
         wounds: 1,
         move: 8,

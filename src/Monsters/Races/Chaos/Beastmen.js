@@ -3,7 +3,6 @@ import MagicArmour from "../../SpecialRules/MagicArmour";
 import MagicItem from "../../SpecialRules/MagicItem";
 import MagicWeapon from "../../SpecialRules/MagicWeapon";
 import Throw from "../../SpecialRules/Throw";
-import image from "../../../assets/monsters/chaos/beastmen.webp";
 
 const description = "Beastmen fight in warbands led by old, savage warriors who have long since proved their " +
     "ability to lead. They are powerful and very resilient fighters with big, brutish heads, sharp piercing horns, " +
@@ -14,7 +13,6 @@ export function Beastman () {
         singularName: "Beastman",
         pluralName: "Beastmen",
         description,
-        image,
         race: Chaos,
         wounds: 6,
         move: 4,
@@ -38,7 +36,6 @@ export function BeastmanChampion () {
         singularName: "Beastman Champion",
         pluralName: "Beastman Champions",
         description,
-        image,
         race: Chaos,
         wounds: 30,
         move: 4,
@@ -63,7 +60,6 @@ export function BeastmanHero () {
         singularName: "Beastman Hero",
         pluralName: "Beastman Heroes",
         description,
-        image,
         race: Chaos,
         wounds: 34,
         move: 4,
@@ -89,7 +85,6 @@ export function BeastmanLord () {
         singularName: "Beastman Lord",
         pluralName: "Beastman Lords",
         description,
-        image,
         race: Chaos,
         wounds: 47,
         move: 4,

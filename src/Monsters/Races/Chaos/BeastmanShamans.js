@@ -1,7 +1,6 @@
 import Chaos from "../Chaos";
 import MagicItem from "../../SpecialRules/MagicItem";
 import MagicWeapon from "../../SpecialRules/MagicWeapon";
-import image from "../../../assets/monsters/chaos/beastmen.webp";
 
 const description = "Beastman Shamans are revered by the rest of their kind because of their ability to " +
     "summon the power of Chaos to cast crude but powerful magic spells.";
@@ -110,7 +109,6 @@ export function BeastmanShaman() {
         singularName: "Beastman Shaman",
         pluralName: "Beastman Shaman",
         description,
-        image,
         race: Chaos,
         wounds: 26,
         move: 4,
@@ -135,7 +133,6 @@ export function BeastmanShamanChampion() {
         singularName: "Beastman Shaman Champion",
         pluralName: "Beastman Shaman Champions",
         description,
-        image,
         race: Chaos,
         wounds: 34,
         move: 4,
