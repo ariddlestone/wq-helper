@@ -5,7 +5,6 @@ import Tattoos from "../../SpecialRules/Tattoos";
 import Magic from "../../SpecialRules/Magic";
 import MagicItem from "../../SpecialRules/MagicItem";
 import MagicDispel from "../../SpecialRules/MagicDispel";
-import image from "../../../assets/monsters/orcs-and-goblins/orc-shaman.webp";
 
 const description = "Orc Shamans are more powerful than their Goblin cousins, soaking up the psychic energy" +
     " of the greenskins around them to create raw Waaagh! magic to hurl at their foes.";
@@ -155,7 +154,6 @@ export function OrcShaman() {
         singularName: "Orc Shaman",
         pluralName: "Orcs Shamans",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 16,
         move: 4,
@@ -181,7 +179,6 @@ export function OrcShamanChampion() {
         singularName: "Orc Shaman Chamion",
         pluralName: "Orcs Shaman Champions",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 20,
         move: 4,
@@ -207,7 +204,6 @@ export function OrcShamanLord() {
         singularName: "Orc Shaman Lord",
         pluralName: "Orcs Shaman Lords",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 42,
         move: 4,
@@ -235,7 +231,6 @@ export function SavageOrcShaman() {
         singularName: "Savage Orc Shaman",
         pluralName: "Savage Orcs Shamans",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 16,
         move: 4,

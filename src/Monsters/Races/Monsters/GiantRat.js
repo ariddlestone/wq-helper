@@ -1,5 +1,4 @@
 import Monsters from "../Monsters";
-import image from "../../../assets/monsters/monsters/giant-rats.webp";
 
 export function GiantRat () {
     return {
@@ -9,7 +8,6 @@ export function GiantRat () {
             "dirtiest corners of the Warhammer world. Bloated by eating indescribable foul things, these rats have " +
             "grown to immense proportions. When cornered, Giant Rats hurl themselves at the opponent in a maniacal " +
             "frenzy, lunging for their enemy's jugular vein with no thought for their own safety.",
-        image,
         race: Monsters,
         wounds: 1,
         move: 6,

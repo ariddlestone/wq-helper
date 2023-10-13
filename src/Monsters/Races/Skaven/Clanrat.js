@@ -3,7 +3,6 @@ import MagicWeapon from "../../SpecialRules/MagicWeapon";
 import NeverPinned from "../../SpecialRules/NeverPinned";
 import Dodge from "../../SpecialRules/Dodge";
 import WeepingBlade from "../../SpecialRules/WeepingBlade";
-import image from "../../../assets/monsters/skaven/clanrats.webp";
 
 const description = "Individual Skaven warriors are vicious but cowardly creatures, and they are best deployed in " +
     "large numbers. The more powerful warriors lead their brethren into combat, and a Skaven Champion will not think " +
@@ -14,7 +13,6 @@ export function Clanrat() {
         singularName: "Skaven Clanrat",
         pluralName: "Skaven Clanrats",
         description,
-        image,
         race: Skaven,
         wounds: 3,
         move: 5,
@@ -36,7 +34,6 @@ export function ClanratChampion() {
         singularName: "Skaven Clanrat Champion",
         pluralName: "Skaven Clanrat Champions",
         description,
-        image,
         race: Skaven,
         wounds: 11,
         move: 5,
@@ -61,7 +58,6 @@ export function ClanratChieftain() {
         singularName: "Skaven Clanrat Chieftain",
         pluralName: "Skaven Clanrat Chieftains",
         description,
-        image,
         race: Skaven,
         wounds: 20,
         move: 5,

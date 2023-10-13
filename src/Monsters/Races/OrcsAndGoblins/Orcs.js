@@ -4,7 +4,6 @@ import IgnoreBlows from "../../SpecialRules/IgnoreBlows";
 import MagicWeapon from "../../SpecialRules/MagicWeapon";
 import MagicArmour from "../../SpecialRules/MagicArmour";
 import MagicItem from "../../SpecialRules/MagicItem";
-import image from "../../../assets/monsters/orcs-and-goblins/orcs.webp";
 
 const description = "Orcs vary in height and physical appearance more than humans - some are no taller than a man " +
     "but most are substantially larger. They are also much broader than humans, with big deep chests, massive " +
@@ -16,7 +15,6 @@ export function Orc() {
         singularName: "Orc",
         pluralName: "Orcs",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 3,
         move: 4,
@@ -43,7 +41,6 @@ export function OrcBoss() {
         singularName: "Orc Boss",
         pluralName: "Orc Bosses",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 18,
         move: 4,
@@ -67,7 +64,6 @@ export function OrcBigBoss() {
         singularName: "Orc Big Boss",
         pluralName: "Orc Big Bosses",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 25,
         move: 4,
@@ -93,7 +89,6 @@ export function OrcWarBoss() {
         singularName: "Orc War Boss",
         pluralName: "Orc War Bosses",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 33,
         move: 4,

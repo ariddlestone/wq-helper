@@ -2,7 +2,6 @@ import OrcsAndGoblins from "../OrcsAndGoblins";
 import ArmedWith from "../../SpecialRules/ArmedWith";
 import MagicWeapon from "../../SpecialRules/MagicWeapon";
 import MagicResistance from "../../SpecialRules/MagicResistance";
-import image from "../../../assets/monsters/orcs-and-goblins/goblin-archers.webp";
 
 const description = "Like their big relatives the Orcs, Goblins vary in size although they are typically smaller than " +
     "Orcs and usually smaller than a man. Goblins have quick, nimble fingers and small darting eyes, their teeth are " +
@@ -16,7 +15,6 @@ export function Goblin () {
         singularName: "Goblin",
         pluralName: "Goblins",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 2,
         move: 4,
@@ -43,7 +41,6 @@ export function GoblinBoss () {
         singularName: "Goblin Boss",
         pluralName: "Goblin Bosses",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 6,
         move: 4,
@@ -67,7 +64,6 @@ export function GoblinBigBoss () {
         singularName: "Goblin Big Boss",
         pluralName: "Goblin Big Bosses",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 12,
         move: 4,
@@ -92,7 +88,6 @@ export function GoblinNetter () {
         singularName: "Goblin Netter",
         pluralName: "Goblin Netters",
         description,
-        image,
         race: OrcsAndGoblins,
         wounds: 2,
         move: 4,

@@ -2,7 +2,6 @@ import Undead from "../Undead";
 import ArmedWith from "../../SpecialRules/ArmedWith";
 import Fear from "../../SpecialRules/Fear";
 import Regenerate from "../../SpecialRules/Regenerate";
-import image from "../../../assets/monsters/undead/tomb-guardians.webp";
 
 const description = "Skeleton warriors claw themselves out of the earth to attack the living. They wield rusty " +
     "swords and axes, and mouldering remnants of armour still cling to their frame. Some skeletal champions are the " +
@@ -13,7 +12,6 @@ export function Skeleton() {
         singularName: "Skeleton",
         pluralName: "Skeletons",
         description,
-        image,
         race: Undead,
         wounds: 5,
         move: 4,
@@ -42,7 +40,6 @@ export function TombGuardian() {
         singularName: "Tomb Guardian",
         pluralName: "Tomb Guardians",
         description,
-        image,
         race: Undead,
         wounds: 15,
         move: 4,

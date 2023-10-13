@@ -1,7 +1,6 @@
 import OrcsAndGoblins from "../OrcsAndGoblins";
 import AmbushMagic from "../../SpecialRules/AmbushMagic";
 import Break from "../../SpecialRules/Break";
-import image from "../../../assets/monsters/orcs-and-goblins/hobgoblin.png";
 
 export function Hobgoblin () {
     return {
@@ -11,7 +10,6 @@ export function Hobgoblin () {
             "appearance, being taller than Goblins yet not as burly as Orcs. They are extremely cowardly and sneaky, " +
             "much taken with ganging up on their victims in the dark. They are often found in the empoy of Chaos " +
             "Dwarfs.",
-        image,
         race: OrcsAndGoblins,
         wounds: 4,
         move: 4,

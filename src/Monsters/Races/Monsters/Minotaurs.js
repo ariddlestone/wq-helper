@@ -2,7 +2,6 @@ import Monsters from "../Monsters";
 import Fear from "../../SpecialRules/Fear";
 import MagicWeapon from "../../SpecialRules/MagicWeapon";
 import MagicItem from "../../SpecialRules/MagicItem";
-import image from "../../../assets/monsters/monsters/minotaurs.webp";
 
 const description = "Minotaurs are large creatures, and have the torso of a hugely-muscled human, but the horned " +
     "head of a wild bull. Their immense faces are broad, squat and evil, with beady eyes, jutting fangs and " +
@@ -13,7 +12,6 @@ export function Minotaur () {
         singularName: "Minotaur",
         pluralName: "Minotaurs",
         description,
-        image,
         race: Monsters,
         wounds: 15,
         move: 6,
@@ -37,7 +35,6 @@ export function MinotaurChampion () {
         singularName: "Minotaur Champion",
         pluralName: "Minotaur Champions",
         description,
-        image,
         race: Monsters,
         wounds: 34,
         move: 6,
@@ -62,7 +59,6 @@ export function MinotaurHero () {
         singularName: "Minotaur Hero",
         pluralName: "Minotaur Heroes",
         description,
-        image,
         race: Monsters,
         wounds: 48,
         move: 6,

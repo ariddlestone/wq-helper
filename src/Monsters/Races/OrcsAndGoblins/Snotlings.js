@@ -1,7 +1,6 @@
 import OrcsAndGoblins from "../OrcsAndGoblins";
 import AmbushMagic from "../../SpecialRules/AmbushMagic";
 import GangUp from "../../SpecialRules/GangUp";
-import image from "../../../assets/monsters/orcs-and-goblins/snotlings.webp";
 
 export function Snotling () {
     return {
@@ -10,7 +9,6 @@ export function Snotling () {
         description: "Snotlings are the smallest of the green-skinned races. They are not very intelligent and " +
             "behave very much like extremely enthusiastic and uncontrollable puppies. They can fetch and carry for " +
             "other Goblin or Orc races, and do other rather limited tasks, but they are little use for any real work.",
-        image,
         race: OrcsAndGoblins,
         wounds: 1,
         move: 4,

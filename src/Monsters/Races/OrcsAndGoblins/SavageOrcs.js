@@ -1,7 +1,6 @@
 import OrcsAndGoblins from "../OrcsAndGoblins";
 import ArmedWith from "../../SpecialRules/ArmedWith";
 import Tattoos from "../../SpecialRules/Tattoos";
-import image from "../../../assets/monsters/orcs-and-goblins/savage-orc.png";
 
 export function SavageOrc () {
     return {
@@ -11,7 +10,6 @@ export function SavageOrc () {
             "leadership of new ambitious Orc Warlords. Savage Orcs have a more primitive lifestyle than other Orcs. " +
             "They dress in furs and skins, and decorate their bodies with tattoos. Because they are so close to " +
             "nature, Savage Orcs tend to make good shamans.",
-        image,
         race: OrcsAndGoblins,
         wounds: 5,
         move: 4,
