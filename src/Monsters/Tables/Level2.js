@@ -16,12 +16,14 @@ import DarkElves from "../Races/DarkElves";
 import {NaggarothBlackGuard} from "../Races/DarkElves/NaggarothBlackGuards";
 
 import Monsters from "../Races/Monsters";
+import {BullCentaur} from "../Races/Monsters/BullCentaurs";
 import {Centaur} from "../Races/Monsters/Centaurs";
 import {GiantBat} from "../Races/Monsters/GiantBat";
-import {GiantRat} from "../Races/Monsters/GiantRat";
-import {GiantSpider} from "../Races/Monsters/GiantSpider";
+import {GiantRat} from "../Races/Monsters/GiantRats";
+import {GiantSpider} from "../Races/Monsters/GiantSpiders";
 import {Minotaur} from "../Races/Monsters/Minotaurs";
-import {Ogre} from "../Races/Monsters/Ogre";
+import {Ogre} from "../Races/Monsters/Ogres";
+import {RatOgre} from "../Races/Monsters/RatOgres";
 
 import OrcsAndGoblins from "../Races/OrcsAndGoblins";
 import {BlackOrc} from "../Races/OrcsAndGoblins/BlackOrcs";
@@ -123,7 +125,14 @@ export const monsters = [
         race: OrcsAndGoblins,
     }),
 
-    // TODO: 1D3 Rat Ogres
+    Object.assign((dungeonLevel, tableLevel) => {
+        return [{
+            qty: D3(),
+            monster: RatOgre(dungeonLevel, tableLevel),
+        }];
+    }, {
+        race: Monsters,
+    }),
 
     Object.assign((dungeonLevel, tableLevel) => {
         return [
@@ -342,7 +351,14 @@ export const monsters = [
         race: ChaosDwarfs,
     }),
 
-    // TODO: 3 Bull Centaurs
+    Object.assign((dungeonLevel, tableLevel) => {
+        return [{
+            qty: 3,
+            monster: BullCentaur(dungeonLevel, tableLevel),
+        }];
+    }, {
+        race: OrcsAndGoblins,
+    }),
 
     Object.assign((dungeonLevel, tableLevel) => {
         return [{
