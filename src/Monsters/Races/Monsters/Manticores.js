@@ -13,7 +13,7 @@ const manticoreSting = {
         <p>
             During the Monsters' Phase, in addition to making its normal attacks and after it has moved, a Manticore may
             make a special poisonous Sting attack. Each Warrior adjacent to the Manticore is automatically hit and
-            suffers 3D6 Wounds, modified for armour and Toughness. As this attack is poisonous. all the rules for the
+            suffers 3D6 Wounds, modified for armour and Toughness. As this attack is poisonous, all the rules for the
             Poison Special Ability also apply.
         </p>
         <p>${Poison.helperText}</p>
