@@ -22,7 +22,7 @@ export function Hydra() {
         wounds: 70,
         move: 6,
         weaponSkill: 3,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 5,
         toughness: 6,
         initiative: 3,

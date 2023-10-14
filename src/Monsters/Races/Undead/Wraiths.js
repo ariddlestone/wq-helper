@@ -20,7 +20,7 @@ export function Wraith() {
         wounds: 30,
         move: 4,
         weaponSkill: 3,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 3,
         toughness: 4,
         initiative: 3,

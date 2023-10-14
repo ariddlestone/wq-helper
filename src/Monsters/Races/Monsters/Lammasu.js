@@ -26,7 +26,7 @@ export function Lammasu() {
         wounds: 50,
         move: 6,
         weaponSkill: 6,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 6,
         toughness: 7,
         initiative: 6,

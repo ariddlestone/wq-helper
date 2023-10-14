@@ -15,7 +15,7 @@ export function FiendOfSlaanesh () {
         wounds: 8,
         move: 6,
         weaponSkill: 3,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 3,
         toughness: 3,
         initiative: 3,

@@ -42,7 +42,7 @@ export function Wyvern() {
         wounds: 46,
         move: 6,
         weaponSkill: 5,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 5,
         toughness: 6,
         initiative: 4,

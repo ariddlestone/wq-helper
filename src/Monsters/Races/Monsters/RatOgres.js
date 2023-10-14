@@ -12,7 +12,7 @@ export function RatOgre () {
         wounds: 20,
         move: 6,
         weaponSkill: 4,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 5,
         toughness: 5,
         initiative: 5,

@@ -16,7 +16,7 @@ export function GreatTaurus() {
         wounds: 50,
         move: 6,
         weaponSkill: 6,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 6,
         toughness: 6,
         initiative: 7,

@@ -17,7 +17,7 @@ export function Cockatrice () {
         wounds: 26,
         move: 4,
         weaponSkill: 3,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 4,
         toughness: 4,
         initiative: 4,

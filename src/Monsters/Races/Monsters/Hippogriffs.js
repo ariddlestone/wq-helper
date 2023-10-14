@@ -17,7 +17,7 @@ export function Hippogriff() {
         wounds: 55,
         move: 8,
         weaponSkill: 5,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 6,
         toughness: 5,
         initiative: 6,

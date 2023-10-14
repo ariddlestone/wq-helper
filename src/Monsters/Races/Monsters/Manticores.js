@@ -29,7 +29,7 @@ export function Manticore() {
         wounds: 50,
         move: 6,
         weaponSkill: 6,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 7,
         toughness: 7,
         initiative: 4,

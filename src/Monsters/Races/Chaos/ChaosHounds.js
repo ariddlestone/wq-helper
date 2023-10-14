@@ -14,7 +14,7 @@ export function ChaosHound () {
         wounds: 8,
         move: 6,
         weaponSkill: 4,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 4,
         toughness: 4,
         initiative: 4,

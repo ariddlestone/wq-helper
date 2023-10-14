@@ -12,7 +12,7 @@ export function Warhound() {
         wounds: 6,
         move: 5,
         weaponSkill: 4,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 3,
         toughness: 3,
         initiative: 6,

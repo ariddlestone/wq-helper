@@ -15,7 +15,7 @@ export function Ghost() {
         wounds: 16,
         move: 4,
         weaponSkill: 2,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: undefined,
         toughness: 3,
         initiative: 3,
