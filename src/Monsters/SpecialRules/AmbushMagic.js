@@ -25,7 +25,7 @@ export default function (roll) {
             <p>
                 Monsters that successfully carry out an Ambush may ignore the rule about waiting until the next
                 monsters' phase before they attack. If the monsters appear in the power phase, for instance, they are
-                placed and make on set of attacks in that phase <em>and</em> attack in the monsters' phase. Once such
+                placed and make one set of attacks in that phase <em>and</em> attack in the monsters' phase. Once such
                 monsters have sprung their ambush, they fight only in the monsters' phase from then on, as normal.
             </p>
             <p>
@@ -62,7 +62,7 @@ export function AmbushMagicModifier(specialRule, roll) {
             <p>
                 Monsters that successfully carry out an Ambush may ignore the rule about waiting until the next
                 monsters' phase before they attack. If the monsters appear in the power phase, for instance, they are
-                placed and make on set of attacks in that phase <em>and</em> attack in the monsters' phase. Once such
+                placed and make one set of attacks in that phase <em>and</em> attack in the monsters' phase. Once such
                 monsters have sprung their ambush, they fight only in the monsters' phase from then on, as normal.
             </p>
             <p>
