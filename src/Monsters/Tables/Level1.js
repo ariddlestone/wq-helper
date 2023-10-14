@@ -9,10 +9,10 @@ import Monsters from "../Races/Monsters";
 import {CaveSquig} from "../Races/Monsters/CaveSquigs";
 import {Centaur} from "../Races/Monsters/Centaurs";
 import {GiantBat} from "../Races/Monsters/GiantBat";
-import {GiantRat} from "../Races/Monsters/GiantRat";
-import {GiantSpider} from "../Races/Monsters/GiantSpider";
+import {GiantRat} from "../Races/Monsters/GiantRats";
+import {GiantSpider} from "../Races/Monsters/GiantSpiders";
 import {Minotaur} from "../Races/Monsters/Minotaurs";
-import {Ogre} from "../Races/Monsters/Ogre";
+import {Ogre} from "../Races/Monsters/Ogres";
 
 import Skaven from "../Races/Skaven";
 import {Clanrat} from "../Races/Skaven/Clanrat";

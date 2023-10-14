@@ -14,7 +14,7 @@ export function PlagueCenserBearer() {
         wounds: 4,
         move: 5,
         weaponSkill: 4,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 4,
         toughness: 4,
         initiative: 4,

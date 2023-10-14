@@ -16,7 +16,7 @@ export function Juggernaut () {
         wounds: 35,
         move: 7,
         weaponSkill: 3,
-        ballisticSkill: undefined,
+        ballisticSkill: null,
         strength: 5,
         toughness: 5,
         initiative: 2,
