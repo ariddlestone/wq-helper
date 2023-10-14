@@ -59,7 +59,7 @@ export function LicheKing() {
         armour: 6,
         damage: "6D6",
         specialRules: [
-            ChaosMagic(2),
+            ChaosMagic(2, "Liche"),
             LargeMonster(),
             NecromanticMagic(3),
             MagicArmour(),
