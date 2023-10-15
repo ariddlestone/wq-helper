@@ -1,16 +1,12 @@
-import Level1 from "@/Monsters/Tables/Level1";
+import Level1 from "./Tables/Level1";
+import Level2 from "./Tables/Level2";
 
 const tables = {
     1: Level1,
+    2: Level2,
 };
 
-export default function(level, race) {
+export default function(level, race = null) {
     let table = tables[level];
-    if(race) {
-        table = table.filter(row => row.race === race);
-    }
-    if(table.length === 0) {
-        return [];
-    }
-    return table[Math.floor(Math.random() * table.length)]();
+    return table(level, race);
 }
