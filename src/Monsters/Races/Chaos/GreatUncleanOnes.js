@@ -32,7 +32,7 @@ export function GreatUncleanOne () {
         damage: "6D6",
         specialRules: [
             AmbushMagic(5),
-            ChaosMagic(4),
+            ChaosMagic(4, "Chaos Daemon", 1),
             GreaterDaemon(13),
             IgnoreBlows(5),
             IgnorePain(10),

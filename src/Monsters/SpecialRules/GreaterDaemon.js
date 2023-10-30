@@ -22,10 +22,6 @@ export default function (value) {
                 If your Warrior's roll was a natural 1 he is so terrified that he may do nothing at all for 1 turn and
                 may be hit automatically.
             </p>
-            <p>
-                If it is a magic user, and the spell table requires more than 1D6, then when rolling for spells a
-                Greater Daemon gets +1 on its Magic Table dice roll.
-            </p>
         `,
     };
 }
