@@ -32,7 +32,7 @@ export function LordOfChange () {
         specialRules: [
             AmbushMagic("A"),
             GreaterDaemon(13),
-            ChaosMagic(5, "Chaos Daemon", 1),
+            ChaosMagic(5, "Lord of Change", 1),
             Fly(),
             IgnoreBlows(5),
             IgnorePain(7),

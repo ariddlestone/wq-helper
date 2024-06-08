@@ -29,7 +29,7 @@ export function ChaosSorcerer () {
         armour: 1,
         damage: "1D6",
         specialRules: [
-            ChaosMagic(1),
+            ChaosMagic(1, "Chaos Sorcerer"),
             MagicResistance(4),
             MagicArmour(),
             MagicItem(),
@@ -57,7 +57,7 @@ export function MasterChaosSorcerer () {
         armour: 1,
         damage: "4D6",
         specialRules: [
-            ChaosMagic(3),
+            ChaosMagic(3, "Master Chaos Sorcerer"),
             MagicDispel(4),
             MagicResistance(4),
             MagicArmour(),
