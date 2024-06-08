@@ -1,9 +1,10 @@
 export default function (type, description, spells, spellsPerTurn, modifier) {
     if (modifier !== 0) {
-        const maxRoll = spells.reduce((maxRoll, spell) => Math.max(maxRoll, spell.maxRoll), 0);
+        const minRoll = spells.reduce((minRoll, spell) => Math.min(minRoll, spell.minRoll), Number.MAX_SAFE_INTEGER);
+        const maxRoll = spells.reduce((maxRoll, spell) => Math.max(maxRoll, spell.maxRoll), Number.MIN_SAFE_INTEGER);
         spells = spells.map((spell) => {
-            spell.minRoll = Math.max(1, spell.minRoll - modifier);
-            spell.maxRoll = spell.maxRoll === maxRoll ? spell.maxRoll : spell.maxRoll - modifier;
+            spell.minRoll = (spell.minRoll === minRoll) ? spell.minRoll : (spell.minRoll - modifier);
+            spell.maxRoll = (spell.maxRoll === maxRoll) ? spell.maxRoll : (spell.maxRoll - modifier);
             return spell;
         });
         spells = spells.filter(spell => spell.minRoll <= spell.maxRoll);
