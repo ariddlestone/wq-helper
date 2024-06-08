@@ -45,7 +45,7 @@
                         <td>{{ monster.gold }}</td>
                     </tr>
                     <tr>
-                        <th>Armor</th>
+                        <th>Armour</th>
                         <td>{{ monster.armour > 0 ? monster.armour : "-" }}</td>
                     </tr>
                     <tr>
