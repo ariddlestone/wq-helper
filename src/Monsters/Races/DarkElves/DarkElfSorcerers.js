@@ -49,7 +49,7 @@ export function DarkElfSorcererChampion() {
         armour: 1,
         damage: "1D6",
         specialRules: [
-            ChaosMagic(2, "Dark Elf Sorcerer"),
+            ChaosMagic(2, "Dark Elf Sorcerer Champion"),
             Hate("Elves"),
             MagicResistance(5),
             MagicItem(),
@@ -75,7 +75,7 @@ export function DarkElfMasterSorcerer() {
         armour: 2,
         damage: "2D6",
         specialRules: [
-            ChaosMagic(3, "Dark Elf Sorcerer"),
+            ChaosMagic(3, "Dark Elf Master Sorcerer"),
             Hate("Elves"),
             MagicDispel(4),
             MagicResistance(4),
@@ -103,7 +103,7 @@ export function DarkElfSorcererLord() {
         damage: "3D6",
         specialRules: [
             AmbushMagic("A"),
-            ChaosMagic(4, "Dark Elf Sorcerer"),
+            ChaosMagic(4, "Dark Elf Sorcerer Lord"),
             Hate("Elves"),
             MagicDispel(4),
             MagicResistance(3),

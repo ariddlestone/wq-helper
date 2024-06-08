@@ -6,9 +6,9 @@ import MagicWeapon from "../../SpecialRules/MagicWeapon";
 const description = "Beastman Shamans are revered by the rest of their kind because of their ability to " +
     "summon the power of Chaos to cast crude but powerful magic spells.";
 
-const beastmanMagic = (spellsPerTurn, modifier = 0) => ChaosMagic(
+const beastmanMagic = (spellsPerTurn, name, modifier = 0) => ChaosMagic(
     spellsPerTurn,
-    "Beastman Shaman",
+    name,
     modifier - 1
 );
 
@@ -30,7 +30,7 @@ export function BeastmanShaman() {
         armour: 0,
         damage: "1D6",
         specialRules: [
-            beastmanMagic(1),
+            beastmanMagic(1, "Beastman Shaman"),
             MagicWeapon(),
         ],
     };
@@ -54,7 +54,7 @@ export function BeastmanShamanChampion() {
         armour: 0,
         damage: "2D6",
         specialRules: [
-            beastmanMagic(2),
+            beastmanMagic(2, "Beastman Shaman Champion"),
             MagicItem(),
             MagicWeapon(),
         ],
