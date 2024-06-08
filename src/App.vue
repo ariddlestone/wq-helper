@@ -57,7 +57,7 @@ export default {
     return {
       races: Races,
       selectedRace: null,
-      levels: [1],
+      levels: [1, 2],
       selectedLevel: 1,
       selectedMonster: null,
       selectedMonsterQuantity: 1,
