@@ -1,10 +1,13 @@
 import Magic from "./Magic";
 
 export default function (spellsPerTurn, sorcererName = "Chaos Sorcerer", modifier = 0) {
+    const article = /^[aeiou]/i.test(sorcererName)
+        ? 'an'
+        : 'a';
     return Magic(
         "Chaos",
         `
-            At the start of each Monsters' Phase, a ${sorcererName} may cast ${spellsPerTurn} of the following spells.
+            At the start of each Monsters' Phase, ${article} ${sorcererName} may cast ${spellsPerTurn} of the following spells.
             Roll 2D6 on the following table to determine which spells are cast:
         `,
         [

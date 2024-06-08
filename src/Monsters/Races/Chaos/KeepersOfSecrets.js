@@ -38,7 +38,7 @@ export function KeeperOfSecrets () {
             IgnoreBlows(5),
             IgnorePain(7),
             LargeMonster(),
-            ChaosMagic(4, "Chaos Daemon", 1),
+            ChaosMagic(4, "Keeper of Secrets", 1),
             MagicDispel(4),
             MagicResistance(4),
             NeverPinned(),

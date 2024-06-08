@@ -297,7 +297,7 @@ export function EmperorDragon() {
             IgnoreBlows(4),
             IgnorePain("3D6"),
             LargeMonster(),
-            ChaosMagic(2, "Dragon"),
+            ChaosMagic(2, "Emporer Dragon"),
             Terror(14),
             treasureHorde(2),
         ],
