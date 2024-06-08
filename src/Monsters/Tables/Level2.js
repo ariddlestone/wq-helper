@@ -1,4 +1,5 @@
 import {D3, D6} from "../../Utilities/Dice";
+import Level3 from "./Level3";
 
 import Chaos from "../Races/Chaos";
 import {Beastman} from "../Races/Chaos/Beastmen";
@@ -387,7 +388,7 @@ export const monsters = [
 
 export default function (dungeonLevel = 2, race = null) {
     if (Math.random() < (1.0 / 18.0)) {
-        // TODO: return Level3(dungeonLevel, race);
+        return Level3(dungeonLevel, race);
     }
     const table = race
         ? monsters.filter(row => row.race === race)

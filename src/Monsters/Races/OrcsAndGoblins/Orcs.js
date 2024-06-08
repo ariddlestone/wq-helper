@@ -10,7 +10,11 @@ const description = "Orcs vary in height and physical appearance more than human
     "shoulders and powerfully muscled arms. Orcs have large heads with huge jaws but tiny foreheads behind which " +
     "lurk a thick skull and little brain.";
 
-export function Orc() {
+export function Orc(dungeonLevel, tableLevel) {
+    const bowStrength = (tableLevel >= 3)
+        ? 4
+        : 3;
+
     return {
         singularName: "Orc",
         pluralName: "Orcs",
@@ -29,7 +33,7 @@ export function Orc() {
         damage: "1D6",
         specialRules: [
             ArmedWith([
-                {name: "Bows (Str 3)"},
+                {name: `Bows (Str ${bowStrength})`},
                 {name: "Swords"},
             ]),
         ],
