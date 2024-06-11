@@ -51,13 +51,14 @@ import {Wight} from "../Races/Undead/Wights";
 export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
         const qty = D3() + 1;
+        const mount = Juggernaut(dungeonLevel, tableLevel);
         const rider = ChaosWarrior(dungeonLevel, tableLevel);
-        rider.specialRules.push(Riding("Juggernaut of Khorne"));
+        rider.specialRules.push(Riding(mount));
 
         return [
             {
                 qty,
-                monster: Juggernaut(dungeonLevel, tableLevel),
+                monster: mount,
             },
             {
                 qty,
@@ -69,13 +70,14 @@ export const monsters = [
     }),
 
     Object.assign((dungeonLevel, tableLevel) => {
+        const necromancer = Necromancer(dungeonLevel, tableLevel);
         const skeleton = Skeleton(dungeonLevel, tableLevel);
-        skeleton.specialRules.push(Guards("Necromancer"));
+        skeleton.specialRules.push(Guards(necromancer));
 
         return [
             {
                 qty: 1,
-                monster: Necromancer(dungeonLevel, tableLevel),
+                monster: necromancer,
             },
             {
                 qty: D6(2),
@@ -108,7 +110,7 @@ export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
         const warlock = SkavenWarlock(dungeonLevel, tableLevel);
         const stormvermin = StormverminChampion(dungeonLevel, tableLevel);
-        stormvermin.specialRules.push(Guards(warlock.singularName));
+        stormvermin.specialRules.push(Guards(warlock));
 
         return [
             {
@@ -251,7 +253,7 @@ export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
         const sorcerer = ChaosDwarfSorcerer(dungeonLevel, tableLevel);
         const blunderbuss = ChaosDwarfBlunderbuss(dungeonLevel, tableLevel);
-        blunderbuss.specialRules.push(Guards(sorcerer.singularName));
+        blunderbuss.specialRules.push(Guards(sorcerer));
         return [
             {
                 qty: 1,
@@ -433,7 +435,7 @@ export const monsters = [
         const qty = D3() + 1;
         const mount = Juggernaut(dungeonLevel, tableLevel);
         const rider = ChaosWarrior(dungeonLevel, tableLevel);
-        rider.specialRules.push(Riding(mount.singularName));
+        rider.specialRules.push(Riding(mount));
         return [
             {
                 qty,
@@ -462,7 +464,7 @@ export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
         const necromancer = Necromancer(dungeonLevel, tableLevel);
         const skeleton = Skeleton(dungeonLevel, tableLevel);
-        skeleton.specialRules.push(Guards(necromancer.singularName));
+        skeleton.specialRules.push(Guards(necromancer));
         return [
             {
                 qty: 1,
@@ -544,7 +546,7 @@ export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
         const warlock = SkavenWarlock(dungeonLevel, tableLevel);
         const stormvermin = StormverminChampion(dungeonLevel, tableLevel);
-        stormvermin.specialRules.push(Guards(warlock.singularName));
+        stormvermin.specialRules.push(Guards(warlock));
 
         return [
             {
