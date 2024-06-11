@@ -1,6 +1,6 @@
-export default function (value) {
+export default function (monster) {
     return {
-        name: `Guards ${value}`,
+        name: `Guards ${monster.singularName}`,
         description: `
             <p>
                 On certain occasions Monsters are listed as Guards because, as the term suggests, they are guarding one

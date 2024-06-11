@@ -1,5 +1,9 @@
 import {D3, D6} from "../../Utilities/Dice";
 
+import Guards from "../SpecialRules/Guards";
+
+import Level4 from "./Level4";
+
 import Chaos from "../Races/Chaos";
 import {Beastman} from "../Races/Chaos/Beastmen";
 import {Bloodletter} from "../Races/Chaos/Bloodletters";
@@ -42,7 +46,6 @@ import {SkavenAssassin} from "../Races/Skaven/SkavenAssassins";
 import Undead from "../Races/Undead";
 import {Ghost} from "../Races/Undead/Ghosts";
 import {Wight} from "../Races/Undead/Wights";
-import Guards from "../SpecialRules/Guards";
 
 export const monsters = [
     Object.assign((dungeonLevel, tableLevel) => {
@@ -311,13 +314,14 @@ export const monsters = [
     }),
 
     Object.assign((dungeonLevel, tableLevel) => {
+        const sorcerer = ChaosDwarfSorcerer(dungeonLevel, tableLevel);
         const hobgoblin = Hobgoblin(dungeonLevel, tableLevel);
-        hobgoblin.specialRules.push(Guards("Chaos Dwarf Sorcerer"));
+        hobgoblin.specialRules.push(Guards(sorcerer));
 
         return [
             {
                 qty: 1,
-                monster: ChaosDwarfSorcerer(dungeonLevel, tableLevel),
+                monster: sorcerer,
             },
             {
                 qty: 3,
@@ -483,7 +487,7 @@ export const monsters = [
 
 export default function (dungeonLevel = 3, race = null) {
     if (Math.random() < (1.0 / 18.0)) {
-        // TODO: return Level4(dungeonLevel, race);
+        return Level4(dungeonLevel, race);
     }
     const table = race
         ? monsters.filter(row => row.race === race)
