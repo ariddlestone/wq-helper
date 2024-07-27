@@ -88,7 +88,7 @@ export function SkavenPlagueLord() {
                 description: `
                     <p>
                         Any Warrior adjacent to a Skaven Plague Lord is overcome by the choking, noxious vapours that
-                        surround him. At the end of every turn all adjacent Warriors take Z Wounds, with no modifiers
+                        surround him. At the end of every turn all adjacent Warriors take 2 Wounds, with no modifiers
                         for Toughness or armour. If a Warrior is taken to 0 Wounds by a Death Fog and is then healed his
                         Starting Wounds score is reduced by -1D3 permanently.
                     </p>
