@@ -1,5 +1,7 @@
 import {D3, D6} from "../../Utilities/Dice";
 
+import Level5 from "./Level5";
+
 import Guards from "../SpecialRules/Guards";
 import Riding from "../SpecialRules/Riding";
 
@@ -595,7 +597,7 @@ export const monsters = [
 
 export default function (dungeonLevel = 4, race = null) {
     if (Math.random() < (1.0 / 18.0)) {
-        // TODO: return Level5(dungeonLevel, race);
+        return Level5(dungeonLevel, race);
     }
     const table = race
         ? monsters.filter(row => row.race === race)
