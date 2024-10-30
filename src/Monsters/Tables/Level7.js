@@ -315,7 +315,6 @@ export const monsters = [
         race: Monsters,
     }),
 
-
     Object.assign((dungeonLevel, tableLevel) => {
         const shaman = BeastmanShaman(dungeonLevel, tableLevel);
         const guard = BeastmanChampion(dungeonLevel, tableLevel);
