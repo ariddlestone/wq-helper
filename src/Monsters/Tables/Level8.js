@@ -1,5 +1,7 @@
-import Level9 from "./Level9";
 import {D3, D6} from "../../Utilities/Dice";
+
+import Level9 from "./Level9";
+
 import ArmedWith from "../SpecialRules/ArmedWith";
 import Guards from "../SpecialRules/Guards";
 
