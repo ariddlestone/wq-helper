@@ -82,7 +82,7 @@ const GiantAttacks = {
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Hurl ar Warriors</td>
+                                    <td>Hurl at Warriors</td>
                                     <td>
                                         The Giant picks up the Warrior and hurls him at his companions Take a Warrior
                                         counter to see which Warrior is targeted. Roll 7D6 and separate those that have an
@@ -100,7 +100,7 @@ const GiantAttacks = {
                                     <td>Smash Against the Roof</td>
                                     <td>
                                         The Giant grabs the Warrior by the feet to get a good swing and begins to smash
-                                        him repeatedly against the roofof the cave in a cheerfully enthusiastic fashion.
+                                        him repeatedly against the roof of the cave in a cheerfully enthusiastic fashion.
                                         This does the Warrior no good at all. The Giant smashes the Warrior against the
                                         roof 1D6 times, inflicting 7 Wounds, with no modifiers for Toughness or armour,
                                         each time. Then roll on this sub-table again.
@@ -201,8 +201,8 @@ export function Giant() {
             GiantAttacks,
             IgnoreBlows(5),
             IgnorePain(10),
-            LargeMonster,
-            NeverPinned,
+            LargeMonster(),
+            NeverPinned(),
         ],
     };
 }
